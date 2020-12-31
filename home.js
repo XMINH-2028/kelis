@@ -606,6 +606,7 @@
         var cart_hover_ = 0;
         var deal_end_banner_width = 0;
         var deal_end_banner_count = 0;
+        var navbar_click = 0;
         var reSize = function() {
             cart_hover_top = getOffset(cart_hover_).top;
             cart_hover_left = getOffset(cart_hover_).left;
@@ -632,10 +633,12 @@
                 $("#nav_fixtop_pc").css("display","none");
                 $("#nav_fixtop_mb").css("visibility","visible");
                 $("#nav_fixtop_pc").css("visibility","hidden");
-                if (navbar_click == 0) {
+                if (navbar_click === 0) {
                     $(".body_mask").css("display","none");
+                    console.log(navbar_click);
                 } else {
                     $(".body_mask").css("display","block");
+                    console.log(navbar_click);
                 }
                 $("#navbar_right").css("visibility","visible");
                 $("#navbar_left").css("visibility","visible");
@@ -919,7 +922,6 @@
             });
         });
 
-        var navbar_click = 0;
         $(document).ready(function(){
             $(".3gach").click(function(){
                 setTimeout(function(){

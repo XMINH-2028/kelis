@@ -1076,22 +1076,8 @@ body a:hover {
     padding-left: 18px;
 }
 @media screen and (min-width:1360px) {
-    #why_kelis {
-        width: 1200px;
-        padding:0px ;
-    }
-    .what_new_main {
-        width: 1143px;
-        padding:0px 0px 100px 0px;
-    }
-    #topsite_top ul {
-        width: 650px !important;
-    }
-    #topsite_main {
+    .container-fluid,#nav_fixtop_pc,#nav_fixtop_mb {
         width: 1360px !important;
-    }
-    .cartinfo {
-        width: 1200px;
     }
 }
 @media screen and (max-width:1100px) {
@@ -1465,4 +1451,12 @@ body a:hover {
     .special_pr_main {
         padding:0px 0.5rem !important;
     }
+}  
+@media screen and (max-width:300px) {
+   .container-fluid,#nav_fixtop_pc,#nav_fixtop_mb {
+    width: 280px !important;
+   }
+   #topsite_main_ .col-3 {
+    padding: 0px;
+   }
 }                                                                               

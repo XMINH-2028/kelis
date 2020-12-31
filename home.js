@@ -5,7 +5,6 @@
             $(".container-fluid").fadeIn("slow");
         },50);
     },1600);
-
         $(".spinx6").css("animation","spin 1.3s");
         $(".spinx5").css("animation","spin 1.42s");
         $(".spinx4").css("animation","spin 1.54s");

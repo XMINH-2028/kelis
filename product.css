@@ -740,6 +740,7 @@ strike{
 }
 .get_pr {
     z-index: 999999;
+    display: none;
 }
 .quick_info {
     width: 950px;
@@ -895,22 +896,8 @@ strike{
 
 
 @media screen and (min-width:1360px) {
-    #why_kelis {
-        width: 1200px;
-        padding:0px ;
-    }
-    .what_new_main {
-        width: 1143px;
-        padding:0px 0px 100px 0px;
-    }
-    #topsite_top ul {
-        width: 650px !important;
-    }
-    #topsite_main {
+    .container-fluid,#nav_fixtop_pc,#nav_fixtop_mb {
         width: 1360px !important;
-    }
-    .cartinfo {
-        width: 1200px;
     }
 }
 
@@ -1102,3 +1089,11 @@ strike{
         margin-left: 0 !important;
     }
 }
+@media screen and (max-width:300px) {
+   .container-fluid,#nav_fixtop_pc,#nav_fixtop_mb {
+    width: 280px !important;
+   }
+   #topsite_main_ .col-3 {
+    padding: 0px;
+   }
+}  

@@ -573,11 +573,13 @@ body a:hover {
     text-align: center;
 }
 .special_pr_main_item a span {
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     display: block;
 }
 .pr_sale_item a span {
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }

@@ -288,7 +288,7 @@
                     text_html+='<div class="px-2 pt-4 pr_sale_item parent_img mb-3 mb-lg-0">'+
                         '<div class="special_pr_main_item border position-relative ">'+
                             '<abbr title="'+info_product[text_number[i]].name+'"><a href="" class="d-flex flex-wrap justify-content-center"><img src="'+info_product[text_number[i]].src_pr+'" alt="" class="w-100"><br>'+
-                                '<span class="text-dark text-nowrap">'+info_product[text_number[i]].name+'</span></a></abbr>'+
+                                '<span class="text-dark px-1">'+info_product[text_number[i]].name+'</span></a></abbr>'+
                             '<hr class="mx-auto hr_sample">'+
                             '<p class="text-center font-weight-bold">'+addcomma(info_product[text_number[i]].price_number)+'<span>đ</span></p>'+
                             '<div class="specialprmainitem_select position-absolute d-flex w-100 justify-content-center">'+
@@ -322,7 +322,6 @@
    
         window.onscroll = function() {
             myFunction();
-           
         };
         function myFunction() {
             body_scroll = document.documentElement.scrollTop;
@@ -361,6 +360,57 @@
                 }
             }
         }
+
+        var screen_offset = 0;
+        var cart_hover_top = 0;
+        var cart_hover_left = 0;
+        var cart_hover_ = 0;
+        var deal_end_banner_width = 0;
+        var deal_end_banner_count = 0;
+        var navbar_click = 0;
+        setInterval(function() {
+            cart_hover_top = getOffset(cart_hover_).top;
+            cart_hover_left = getOffset(cart_hover_).left;
+            screen_offset = document.body.offsetWidth;
+            $(".count_sp").html(cart_number);
+            $(".cart_quantity").html(cart_number);
+            if (screen_offset > 992-getScrollbarWidth()) {
+                $(".quick_info").css({"left":(screen_offset-950)/2+"px"});
+                cart_hover_ = document.getElementsByClassName("cart_hover")[0];
+                $("#nav_fixtop_pc").css("display","flex");
+                $("#nav_fixtop_mb").css("display","none");
+                $("#nav_fixtop_pc").css("visibility","visible");
+                $("#nav_fixtop_mb").css("visibility","hidden");
+                $("#topsite_top_").css("visibility","hidden");     
+                $("#navbar_right").css("visibility","hidden");
+                $("#navbar_left").css("visibility","hidden");
+                $("#navbar_nav").css("display","block");
+                $(".navbar_pc").css("height","auto");
+                $(".body_mask").css("display","none");
+            } else {
+                $(".quick_info").css({"left":(screen_offset-$(".quick_info").outerWidth())/2+"px"});
+                cart_hover_ = document.getElementsByClassName("cart_hover")[1];
+                $("#nav_fixtop_mb").css("display","flex");
+                $("#nav_fixtop_pc").css("display","none");
+                $("#nav_fixtop_mb").css("visibility","visible");
+                $("#nav_fixtop_pc").css("visibility","hidden");
+                if (navbar_click === 0) {
+                    $(".body_mask").css("display","none");
+                } else {
+                    $(".body_mask").css("display","block");
+                }
+                $("#navbar_right").css("visibility","visible");
+                $("#navbar_left").css("visibility","visible");
+                $("#topsite_top_").css("visibility","visible");
+                $("#navbar_nav").css("display","none");
+                $(".navbar_pc").css("height","16px");
+            }
+            if (window.innerWidth>1360) {
+                $('#nav_fixtop_pc').css({"left":(window.innerWidth-1360-getScrollbarWidth())/2+"px",'transition':'0s'});
+            } else {
+                $('#nav_fixtop_pc').css({"left":"0px",'transition':'0s'});
+            }
+        },0);
 
         $("#nav_fixtop_mb").html($("#topsite_main_").html());
         $("#nav_fixtop_pc").html($("#container").html());
@@ -425,6 +475,7 @@
                                 },301);
                             },300);
                         },100);
+                        console.log(5);
                     } else {
                         setTimeout (function () {
                             $(".get_pr").css({"top":"-25px","left":cart_hover_left-65+"px","transform":"scale(0.4)","transition":"0.2s"});
@@ -600,62 +651,7 @@
         };
         close_quick_info();
 
-        var screen_offset = 0;
-        var cart_hover_top = 0;
-        var cart_hover_left = 0;
-        var cart_hover_ = 0;
-        var deal_end_banner_width = 0;
-        var deal_end_banner_count = 0;
-        var navbar_click = 0;
-        var reSize = function() {
-            cart_hover_top = getOffset(cart_hover_).top;
-            cart_hover_left = getOffset(cart_hover_).left;
-            screen_offset = document.body.offsetWidth;
-            $(".count_sp").html(cart_number);
-            $(".cart_quantity").html(cart_number);
-            if (screen_offset > 992-getScrollbarWidth()) {
-                $(".quick_info").css({"left":(screen_offset-950)/2+"px"});
-                cart_hover_ = document.getElementsByClassName("cart_hover")[0];
-                $("#nav_fixtop_pc").css("display","flex");
-                $("#nav_fixtop_mb").css("display","none");
-                $("#nav_fixtop_pc").css("visibility","visible");
-                $("#nav_fixtop_mb").css("visibility","hidden");
-                $("#topsite_top_").css("visibility","hidden");     
-                $("#navbar_right").css("visibility","hidden");
-                $("#navbar_left").css("visibility","hidden");
-                $("#navbar_nav").css("display","block");
-                $(".navbar_pc").css("height","auto");
-                $(".body_mask").css("display","none");
-            } else {
-                $(".quick_info").css({"left":(screen_offset-$(".quick_info").outerWidth())/2+"px"});
-                cart_hover_ = document.getElementsByClassName("cart_hover")[1];
-                $("#nav_fixtop_mb").css("display","flex");
-                $("#nav_fixtop_pc").css("display","none");
-                $("#nav_fixtop_mb").css("visibility","visible");
-                $("#nav_fixtop_pc").css("visibility","hidden");
-                if (navbar_click === 0) {
-                    $(".body_mask").css("display","none");
-                    console.log(navbar_click);
-                } else {
-                    $(".body_mask").css("display","block");
-                    console.log(navbar_click);
-                }
-                $("#navbar_right").css("visibility","visible");
-                $("#navbar_left").css("visibility","visible");
-                $("#topsite_top_").css("visibility","visible");
-                $("#navbar_nav").css("display","none");
-                $(".navbar_pc").css("height","16px");
-            }
-            if (window.innerWidth>1360) {
-                $('#nav_fixtop_pc').css({"left":(window.innerWidth-1360-getScrollbarWidth())/2+"px"});
-            } else {
-                $('#nav_fixtop_pc').css({"left":"0px"});
-            }
-        };
-        reSize();
-        window.onresize = function(){
-            reSize();
-        }
+        
         function addcomma(str){
             var text = "";
             if (String(str).length <=6 && String(str).length >=4) {
@@ -1067,7 +1063,7 @@
                     text+='<div class="px-3 py-0 my-3 pr_sale_item parent_img col-xl-4 col-lg-4 col-md-6 col-sm-6 col-sm-6 ">'+
                     '<div class="special_pr_main_item border position-relative">'+
                         '<abbr title="'+info_product[i].name+'"><a href="" class="d-flex flex-wrap justify-content-center"><img src="'+info_product[i].src_pr+'" alt="" class="w-100"><br>'+
-                            '<span class="text-dark">'+info_product[i].name+'</span></a></abbr>'+
+                            '<span class="text-dark px-1">'+info_product[i].name+'</span></a></abbr>'+
                         '<hr class="mx-auto hr_sample">'+
                         '<p class="text-center font-weight-bold">'+addcomma(info_product[i].price_number)+'<span>đ</span></p>'+
                         '<div class="specialprmainitem_select position-absolute d-flex w-100 justify-content-center">'+
@@ -1135,7 +1131,7 @@
                         text+='<div class="px-3 py-0 my-3 pr_sale_item parent_img col-xl-4 col-lg-4 col-md-6 col-sm-6 col-sm-6 ">'+
                             '<div class="special_pr_main_item border position-relative">'+
                                 '<abbr title="'+info_product[random_array[i]].name+'"><a href="" class="d-flex flex-wrap justify-content-center"><img src="'+info_product[random_array[i]].src_pr+'" alt="" class="w-100"><br>'+
-                                    '<span class="text-dark">'+info_product[random_array[i]].name+'</span></a></abbr>'+
+                                    '<span class="text-dark px-1">'+info_product[random_array[i]].name+'</span></a></abbr>'+
                                 '<hr class="mx-auto hr_sample">'+
                                 '<p class="text-center font-weight-bold">'+addcomma(info_product[random_array[i]].price_number)+'<span>đ</span></p>'+
                                 '<div class="specialprmainitem_select position-absolute d-flex w-100 justify-content-center">'+
@@ -1230,7 +1226,7 @@
             text+='<div class="px-3 py-0 my-3 pr_sale_item parent_img col-xl-4 col-lg-4 col-md-6 col-sm-6 col-sm-6 ">'+
                 '<div class="special_pr_main_item border position-relative">'+
                     '<abbr title="'+info_product[w].name+'"><a href="" class="d-flex flex-wrap justify-content-center"><img src="'+info_product[w].src_pr+'" alt="" class="w-100"><br>'+
-                        '<span class="text-dark">'+info_product[w].name+'</span></a></abbr>'+
+                        '<span class="text-dark px-1">'+info_product[w].name+'</span></a></abbr>'+
                     '<hr class="mx-auto hr_sample">'+
                     '<p class="text-center font-weight-bold">'+addcomma(info_product[w].price_number)+'<span>đ</span></p>'+
                     '<div class="specialprmainitem_select position-absolute d-flex w-100 justify-content-center">'+

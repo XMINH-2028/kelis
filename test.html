@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<link rel="stylesheet" href="test.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<title>Title</title>
+</head>
+<body   >
+    <div class="demo mx-auto mt-5">
+        XMINH
+    </div>
+    <h4>Custom checkbox</h4>
+
+    <input id="cbx1" type="checkbox" checked="checked" class="cb">
+    <label class="container" for="cbx1">One</label>
+
+    <input type="checkbox" id="cbx2" class="cb">
+    <label class="container" for="cbx2">Two</label>
+
+    <h4>Custom radio-button</h4>
+
+    <input type="radio" checked="checked" name="radio" class="r" id="r1">
+    <label class="container container-r" for="r1">One</label>
+
+    <input type="radio" name="radio" class="r" id="r2">
+    <label class="container container-r" for="r2">Two</label>
+
+
+    <div class=" w-25 mx-auto position-relative" id="xm">
+        <div>
+            <i class="fas fa-search"></i>
+            <i class="fas fa-plus"></i>
+        <div class="position-absolute bg-success" style="width: 100px; height:100px; top:50px; left:0;display:none">
+
+        </div>
+        </div>
+    </div>
+    
+    <script>
+  
+       
+        $(".fa-search").click(function(){
+            $(".bg-success").fadeToggle("slow");
+
+        });
+        $(".fa-plus").click(function(){
+            $(".bg-success").fadeOut("slow");
+             
+        });
+        
+        $(window).click(function(event) {
+            if (!$(event.target).parents().hasClass("position-relative")) {
+                $(".bg-success").fadeOut("slow");
+            }
+            
+        })
+        
+        
+        
+      
+    </script>
+</body>
+</html>

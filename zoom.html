@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="zoom.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<title>TEST1</title>
+</head>
+<style>
+    #div_zoom_in {
+        height: 36vw; 
+        width: 36vw; 
+        cursor: move;
+    }
+    #div_move {
+        height: 18vw; 
+        width: 18vw; 
+        visibility: hidden;
+    }
+    #zoom_out {
+        height: 36vw; 
+        width: 36vw; 
+        visibility: hidden;
+        overflow: hidden;
+    }
+</style>
+<body>
+    <div class="container-fluid px-0 p-5">
+        <div class="d-flex mt-4" id="div_zoom">
+            <div class="mr-3 w-50 d-flex justify-content-center align-items-center" id="div_zoom_left">
+                <div class="position-relative" id="div_zoom_in">
+                    <img src="images/Cranberry.png" alt="" class="w-100 h-100" id="zoom_in">
+                    <div class="position-absolute border" id="div_move">
+                    </div>
+                </div>
+            </div>
+            <div class="w-50 position-relative d-flex justify-content-center align-items-center" id="div_zoom_right">
+                <div class="position-relative border" id="zoom_out">
+                    <img src="images/Cranberry.png" alt="" class="w-100 h-100 position-absolute" id="img_zoom">
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+<script>
+
+        var x=0;
+        var y=0;
+        setInterval(function div_move_interval(){
+                x = $("#div_move").outerWidth()/2
+                y= document.body.offsetWidth;
+        },0);
+        function getOffset(el) {
+            var _x = 0;
+            var _y = 0;
+            while( el && !isNaN( el.offsetLeft ) && !isNaN( el.offsetTop ) ) {
+                _x += el.offsetLeft - el.scrollLeft;
+                _y += el.offsetTop - el.scrollTop;
+                el = el.offsetParent;
+            }
+            return { top: _y, left: _x };
+        }
+        $(document).ready(function(){
+            $("#div_zoom_in").mouseover(function(){
+                if (y>=992) { 
+                    $("#zoom_out").css("visibility","visible");
+                    $("#div_move").css("visibility","visible");
+                    $("#img_zoom").css("transform","scale(2)");
+                }
+            });
+        });
+        $(document).ready(function(){
+            $("#div_zoom_in").mousemove(function(event){
+                if (event.clientX - getOffset(this).left <= x) {
+                    $("#div_move").css("left","0px");
+                    $("#img_zoom").css("left",x*2+"px");
+                } else if (event.clientX - getOffset(this).left >= x*3){
+                    $("#div_move").css("left",x*2+"px");
+                    $("#img_zoom").css("left",-x*2+"px");
+                } else {
+                    $("#div_move").css("left",(event.clientX - getOffset(this).left - x) + "px");
+                    $("#img_zoom").css("left",x*2-(event.clientX - getOffset(this).left-x)*2 + "px");
+                }
+                if (event.clientY - getOffset(this).top <= x) {
+                    $("#div_move").css("top","0px");
+                    $("#img_zoom").css("top",x*2+"px");
+                } else if (event.clientY - getOffset(this).top >= x*3){
+                    $("#div_move").css("top",x*2+"px");
+                    $("#img_zoom").css("top",-x*2+"px");
+                } else {
+                    $("#div_move").css("top",(event.clientY - getOffset(this).top - x) + "px");
+                    $("#img_zoom").css("top",x*2-(event.clientY - getOffset(this).top-x)*2 + "px");
+                }
+            });
+        });
+        
+        $(document).ready(function(){
+            $("#div_zoom_in").mouseout(function(){
+                    $("#zoom_out").css("visibility","hidden");
+                    $("#div_move").css("visibility","hidden");
+            });
+        });
+
+    </script>
+
+</body>
+</html>
+

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<link rel="stylesheet" href="pay.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<title>Pay</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="pay row">
+            <div class="col-lg-7 border-right pt-5">
+                <div class="caption_show">
+                    <h3 class="mb-3"><a href="#">Vegetables-TMT</a></h3>
+                    <ul class="list-unstyled d-flex">
+                        <li class="mr-2"><a href="cart_info.html">Giỏ hàng</a><span><i class="fas fa-chevron-right ml-2"></i></span></li>
+                        <li class="mr-2">Thông tin giao hàng<span><i class="fas fa-chevron-right ml-2"></i></span></li>
+                        <li class="mr-2">Phương thức thanh toán</li>
+                    </ul>
+                </div>
+                <h5 class="mb-3">Thông tin giao hàng</h5>
+                <p class="mb-2">Bạn đã có tài khoản đăng nhập?<a href="#"> Đăng nhập</a></p>
+                <form action="paymethod.html" >
+                    <div class="wrapper_inp position-relative mb-3">
+                        <label for="name" class="position-absolute mb-0">Họ và tên</label>
+                        <input type="text" name="" id="name" class="form-control" placeholder="Họ và tên">
+                    </div>
+                    <div class="wrapper_inp position-relative float-left mb-3 pr-sm-2 pr-0">
+                        <label for="email" class="position-absolute mb-0">Email</label>
+                        <input type="text" name="" id="email" class="form-control" placeholder="Email">
+                        <span class="mail_alert float-left pl-1"></span>
+                    </div>
+                    <div class="wrapper_inp position-relative float-left mb-3">
+                        <label for="phone" class="position-absolute mb-0">Số điện thoại</label>
+                        <input type="tel" name="" id="phone" class="form-control" placeholder="Số điện thoại" maxlength="11"> 
+                        <span class="phone_alert float-left pl-1"></span>
+                    </div>
+                    <div style="clear:both"></div>
+                    <div class="wrapper_inp position-relative mb-3">
+                        <label for="address" class="position-absolute mb-0">Địa chỉ</label>
+                        <input type="text" name="" id="address" class="form-control" placeholder="Địa chỉ">
+                    </div>
+                    <div class="wrapper_select position-relative mb-3 pr-sm-1 float-left w-50">
+                        <label for="select_city" class="position-absolute">Tỉnh/thành</label> 
+                        <select name="" id="select_city" class="w-100 border rounded">
+                            <option data-code="null" value="null" selected>  Chọn tỉnh / thành </option>
+                            <option data-code="HC" value="50" >Hồ Chí Minh</option>
+                            <option data-code="HI" value="1" >Hà Nội</option>
+                            <option data-code="DA" value="32" >Đà Nẵng</option>
+                            <option data-code="AG" value="57" >An Giang</option>
+                            <option data-code="BV" value="49" >Bà Rịa - Vũng Tàu</option>
+                            <option data-code="BG" value="15" >Bắc Giang</option>
+                            <option data-code="BK" value="4" >Bắc Kạn</option>
+                            <option data-code="BL" value="62" >Bạc Liêu</option>
+                            <option data-code="BN" value="18" >Bắc Ninh</option>
+                            <option data-code="BT" value="53" >Bến Tre</option>
+                            <option data-code="BD" value="35" >Bình Định</option>
+                            <option data-code="BI" value="47" >Bình Dương</option>
+                            <option data-code="BP" value="45" >Bình Phước</option>
+                            <option data-code="BU" value="39" >Bình Thuận</option>
+                            <option data-code="CM" value="63" >Cà Mau</option>
+                            <option data-code="CN" value="59" >Cần Thơ</option>
+                            <option data-code="CB" value="3" >Cao Bằng</option>
+                            <option data-code="DC" value="42" >Đắk Lắk</option>
+                            <option data-code="DO" value="43" >Đắk Nông</option>
+                            <option data-code="DB" value="7" >Điện Biên</option>
+                            <option data-code="DN" value="48" >Đồng Nai</option>
+                            <option data-code="DT" value="56" >Đồng Tháp</option>
+                            <option data-code="GL" value="41" >Gia Lai</option>
+                            <option data-code="HG" value="2" >Hà Giang</option>
+                            <option data-code="HM" value="23" >Hà Nam</option>
+                            <option data-code="HT" value="28" >Hà Tĩnh</option>
+                            <option data-code="HD" value="19" >Hải Dương</option>
+                            <option data-code="HP" value="20" >Hải Phòng</option>
+                            <option data-code="HU" value="60" >Hậu Giang</option>
+                            <option data-code="HO" value="11" >Hòa Bình</option>
+                            <option data-code="HY" value="21" >Hưng Yên</option>
+                            <option data-code="KH" value="37" >Khánh Hòa</option>
+                            <option data-code="KG" value="58" >Kiên Giang</option>
+                            <option data-code="KT" value="40" >Kon Tum</option>
+                            <option data-code="LI" value="8" >Lai Châu</option>
+                            <option data-code="LD" value="44" >Lâm Đồng</option>
+                            <option data-code="LS" value="13" >Lạng Sơn</option>
+                            <option data-code="LO" value="6" >Lào Cai</option>
+                            <option data-code="LA" value="51" >Long An</option>
+                            <option data-code="ND" value="24" >Nam Định</option>
+                            <option data-code="NA" value="27" >Nghệ An</option>
+                            <option data-code="NB" value="25" >Ninh Bình</option>
+                            <option data-code="NT" value="38" >Ninh Thuận</option>
+                            <option data-code="PT" value="16" >Phú Thọ</option>
+                            <option data-code="PY" value="36" >Phú Yên</option>
+                            <option data-code="QB" value="29" >Quảng Bình</option>
+                            <option data-code="QM" value="33" >Quảng Nam</option>
+                            <option data-code="QG" value="34" >Quảng Ngãi</option>
+                            <option data-code="QN" value="14" >Quảng Ninh</option>
+                            <option data-code="QT" value="30" >Quảng Trị</option>
+                            <option data-code="ST" value="61" >Sóc Trăng</option>
+                            <option data-code="SL" value="9" >Sơn La</option>
+                            <option data-code="TN" value="46" >Tây Ninh</option>
+                            <option data-code="TB" value="22" >Thái Bình</option>
+                            <option data-code="TY" value="12" >Thái Nguyên</option>
+                            <option data-code="TH" value="26" >Thanh Hóa</option>
+                            <option data-code="TT" value="31" >Thừa Thiên Huế</option>
+                            <option data-code="TG" value="52" >Tiền Giang</option>
+                            <option data-code="TV" value="54" >Trà Vinh</option>
+                            <option data-code="TQ" value="5" >Tuyên Quang</option>
+                            <option data-code="VL" value="55" >Vĩnh Long</option>
+                            <option data-code="VT" value="17" >Vĩnh Phúc</option>
+                            <option data-code="YB" value="10" >Yên Bái</option>
+                        </select>
+                        <span class="select_alert float-left pl-1"></span>
+                    </div>
+                    <div class="wrapper_select position-relative mb-3 pl-1 float-left w-50">
+                        <label for="select_city_children" class="position-absolute">Quận/huyện</label>
+                        <select name="" id="select_city_children" class="w-100 border rounded">
+                            <option data-code="null" value="null" selected>  Chọn quận / huyện </option>
+                        </select>
+                    </div>
+                    <div style="clear:both"></div>
+                    <div class="d-flex justify-content-center align-items-center mt-2 wrapper_">
+                        <a href="cart_info.html" class="position-relative pl-3 mr-auto"><i class="fas fa-chevron-left mr-2 position-absolute"></i> Giỏ hàng</a>
+                        <button class="px-sm-4 py-sm-3 py-3 px-1 btn btn-primary text-nowrap position-relative" type="button"><span>Tiếp tục đến phương thức thanh toán</span>
+                            <div class="wrapper_loading position-absolute"><div class="btn_loading"></div></div>
+                        </button>
+                    </div>
+                </form>
+                <div class="wrapper_loading position-absolute"><div class="btn_loading1"></div></div>
+                <hr>
+            </div>
+            <div class="col-lg-5 pt-4">
+                <h3 class="py-3 title_hide bg-white my-1"><a href="#">Vegetables-TMT</a></h3>
+                <hr class="m-0 hr_hide">
+                <div class="caption_hide">
+                    <p class="d-flex align-items-center mb-0"><a href="#"><i class="fas fa-cart-arrow-down mr-2">
+                    </i></a><a href="#">Ẩn thông tin đơn hàng<i class="fas fa-chevron-up ml-2">
+                    </i></a><a href="#">Hiện thông tin đơn hàng<i class="fas fa-chevron-down ml-2"></i></a><span class="ml-auto d-flex align-items-center">70,000<ins>đ</ins></span></p>
+                </div>
+                <hr class="m-0 hr_hide">
+                <div class="div_show">
+                    <div class="justify-content-center align-items-center pt-4 div_hide_flex">
+                        <div class="mr-auto position-relative">
+                            <img src="images/otchuongvang.png" alt="" class="img-thumbnail">
+                            <span class="position-absolute rounded-circle border">1</span>
+                        </div>
+                        <p class="d-flex justify-content-center align-items-center">70,000<ins>đ</ins></p>
+                    </div>
+                    <hr class="mb-0 mt-4 div_hide">
+                    <div class="wrapper_1 py-4">
+                        <div class="wrapper_inp position-relative float-left pr-2">
+                            <label for="code" class="position-absolute mb-0">Mã giảm giá</label>
+                            <input type="text" name="" id="code" class="form-control mr-1" placeholder="Mã giảm giá">
+                            <span class="code_alert float-left pl-1"></span>
+                        </div>
+                        <button class="btn btn-primary disabled text-nowrap position-relative px-2 float-right"><span>Sử dụng</span>
+                            <div class="wrapper_loading position-absolute"><div class="btn_loading"></div></div>
+                        </button>
+                        <div style="clear:both"></div>
+                    </div>
+                    <div class="div_hide">
+                        <hr class="mt-0 mb-4">
+                        <p class="d-flex justify-content-center align-items-center"><span class="mr-auto">Tạm tính</span>70,000<ins>đ</ins></p>
+                        <p class="d-flex justify-content-center align-items-center"><span class="mr-auto">Phí vận chuyển</span><i class="fas fa-minus"></i></p>
+                        <hr class="my-4">
+                        <h4 class="d-flex justify-content-center align-items-center mb-0 pb-4">Tổng cộng <span class="ml-auto mr-2">VND</span>70,000<ins>đ</ins></h4>
+                    </div>
+                </div>
+                <hr class="m-0">
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $(".wrapper_inp > input").keydown(function(){
+                $(this).css({"padding-top":"28px","padding-bottom":"14px"});
+                $(this).siblings("label").css({"opacity":"1","top":"0px","transform":"translateY(10%)"});
+                if ($(this).val()=="") {
+                    $(this).attr("placeholder","");
+                }
+            });
+            $(".wrapper_inp > input").eq(4).keydown(function(){
+                if ($(this).val()!="") {
+                    $(this).parents(".wrapper_1").find("button").removeClass("disabled");
+                }
+            });
+        });
+        $(document).ready(function() {
+            $(".wrapper_inp > input").focusout(function(){
+                if ($(this).val()=="") {
+                    $(this).attr("placeholder","Họ và tên");
+                    $(this).css({"padding-top":"19px","padding-bottom":"23px"});
+                    $(this).siblings("label").css({"opacity":"0","top":"50%","transform":"translateY(-50%)"});
+                }
+            });
+        });
+        $(document).ready(function() {
+            $(".wrapper_inp > input").eq(0).focusout(function(){
+                if ($(this).val()=="") {
+                    $(this).attr("placeholder","Họ và tên");
+                }
+            });
+            $(".wrapper_inp > input").eq(1).focusout(function(){
+                if ($(this).val()=="") {
+                    $(this).attr("placeholder","Email");
+                }
+            });
+            $(".wrapper_inp > input").eq(2).focusout(function(){
+                if ($(this).val()=="") {
+                    $(this).attr("placeholder","Số điện thoại");
+                }
+            });
+            $(".wrapper_inp > input").eq(3).focusout(function(){
+                if ($(this).val()=="") {
+                    $(this).attr("placeholder","Địa chỉ");
+                }
+            });
+            $(".wrapper_inp > input").eq(4).focusout(function(){
+                if ($(this).val()=="" || $(this).val()==" ") {
+                    $(this).attr("placeholder","Mã giảm giá");
+                    $(this).parents(".wrapper_1").find("button").addClass("disabled");
+                    $(".code_alert").html("");
+                    $(".wrapper_1 input").removeClass("box_warning");
+                }
+            });
+        });
+        
+        $(document).ready(function() {
+            $("#select_city").click(function(){
+                if ($(this).val()!= "null") {
+                    $(".btn_loading1").addClass("anmt");
+                    setTimeout(function (){
+                        $(".btn_loading1").removeClass("anmt");
+                    },400);   
+                    $(this).css({"padding-top":"17px"});
+                    $(this).siblings("label").css({"opacity":"1","top":"0px","transform":"translateY(10%)","z-index":"1"});
+                }
+            });
+            $("#select_city").focusout(function(){
+                if ($(this).val() == "null") {
+                    $(this).css({"padding-top":"0px"});
+                    $(this).siblings("label").css({"opacity":"0","top":"50%","transform":"translateY(-50%)","z-index":"-1"});
+                }
+            });
+        });
+         var count_div_hide=1;
+        $(document).ready(function(){
+            $(".caption_hide").find("a").eq(2).click(function(){
+                $(this).hide();
+                $(".div_hide").show();
+                $(".div_hide_flex").css("display","flex");
+                $(".caption_hide").find("a").eq(1).show();
+                count_div_hide = 1;
+            });
+        });
+        $(document).ready(function(){
+            $(".caption_hide").find("a").eq(1).click(function(){
+                $(this).hide();
+                $(".div_hide").hide();
+                $(".div_hide_flex").css("display","none");
+                $(".caption_hide").find("a").eq(2).show();
+                count_div_hide = 0;
+            });
+        });
+
+        setInterval(function(){
+            if (document.body.offsetWidth < 992) {
+               if (count_div_hide == 0) {
+                    $(".div_hide").hide();
+                    $(".div_hide_flex").css("display","none");
+               }
+            } else {
+                if (count_div_hide == 0) {
+                    $(".div_hide").show();
+                    $(".div_hide_flex").css("display","flex");
+               }
+            }
+        },0);
+
+        $(document).ready(function(){
+            $(".wrapper_1 button").click(function(){
+                $(this).find(".btn_loading").addClass("anmt");
+                $(this).children("span").css("visibility", "hidden");
+                setTimeout(function (){
+                    $(".btn_loading").removeClass("anmt");
+                    $(".wrapper_1 button span").css("visibility", "visible");
+                    if ($(".wrapper_1 input").val()!="") {
+                        $(".code_alert").html("Không tìm thấy mã giảm giá");
+                        $(".wrapper_1 input").addClass("box_warning");
+                    }
+                },400);
+            });
+        });
+
+        $(document).ready(function(){
+            $(".wrapper_ button").click(function(){
+                $(this).find(".btn_loading").addClass("anmt");
+                $(this).children("span").css("visibility", "hidden");
+                setTimeout(function (){
+                    $(".btn_loading").removeClass("anmt");
+                    $(".wrapper_ span").css("visibility", "visible");
+                    validate();
+                },400);        
+                
+            });
+        });
+
+        function validate() {
+            var n=0;
+                if ($("#phone").val()=="") {
+                    $(".phone_alert").html("Số điện thoại không được bỏ trống");
+                    $("#phone").addClass("box_warning");
+                    n+=1;
+                } else if (String($("#phone").val()).length < 8) {
+                    $(".phone_alert").html("Số điện thoại không hợp lệ (độ dài từ 8 - 11 ký tự, không chứa ký tự đặc biệt và khoảng trắng)");
+                    $("#phone").addClass("box_warning");
+                    n+=1;
+                } else if ($("#phone").val()%$("#phone").val()!=0) {
+                    $(".phone_alert").html("Số điện thoại không hợp lệ (độ dài từ 8 - 11 ký tự, không chứa ký tự đặc biệt và khoảng trắng)");
+                    $("#phone").addClass("box_warning");
+                    n+=1;
+                } else {
+                    $(".phone_alert").html("");
+                    $("#phone").removeClass("box_warning");
+                }
+                if ($("#email").val()!="") {
+                    if (!$("#email").val().includes("@")) {
+                        $(".mail_alert").html("Địa chỉ email không hợp lệ");
+                        $("#email").addClass("box_warning");
+                        n+=1;
+                    } else if ($("#email").val().indexOf("@")==0) {
+                        $(".mail_alert").html("Vui lòng nhập phần đứng trước '@'.'"+$("#email").val()+"' không hoàn chỉnh");
+                        $("#email").addClass("box_warning");
+                        n+=1;
+                    } else if (!$("#email").val().includes(".")) {
+                        $(".mail_alert").html("Địa chỉ email không hợp lệ");
+                        $("#email").addClass("box_warning");
+                        n+=1;
+                    } else if ($("#email").val().lastIndexOf(".") < $("#email").val().indexOf("@")) {
+                        $(".mail_alert").html("Địa chỉ email không hợp lệ");
+                        $("#email").addClass("box_warning");
+                        n+=1;
+                    } else if ($("#email").val().indexOf("@")-1 == $("#email").val().indexOf(".")) {
+                        $(".mail_alert").html("Địa chỉ email không hợp lệ");
+                        $("#email").addClass("box_warning");
+                        n+=1;
+                    } else if ($("#email").val().indexOf("@")+1 == $("#email").val().indexOf(".") ) {
+                        $(".mail_alert").html("'.' bị sử dụng sai vị trí trong '"+$("#email").val().substring($("#email").val().indexOf("@")+1,$("#email").val().length)+"'");
+                        $("#email").addClass("box_warning");
+                        n+=1;
+                    } else if ($("#email").val().indexOf("@")==0) {
+                        $(".mail_alert").html("Địa chỉ email không hợp lệ");
+                        $("#email").addClass("box_warning");
+                        n+=1;
+                    } else {
+                        $(".mail_alert").html("");
+                        $("#email").removeClass("box_warning");
+                    }
+                }
+                if ($("#select_city").val()=="null") {
+                    $(".select_alert").html("Vui lòng chọn tỉnh thành");
+                    $("#select_city").addClass("box_warning");
+                    n+=1;
+                } else {
+                    $(".select_alert").html("");
+                    $("#select_city").removeClass("box_warning");
+                }
+                if (n!=0) {
+                    return false;
+                } else {
+                    $("form:first").submit();
+                }
+            }
+       
+    </script>
+</body>
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                 

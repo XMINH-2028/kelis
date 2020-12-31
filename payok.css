@@ -1,0 +1,49 @@
+.pay svg {
+    top: 8px;
+    left:0px;
+    transform: translateX(-120%);
+}
+.pay div:nth-of-type(1) div:nth-of-type(2) {
+    line-height:17px;
+}
+.pay div:nth-of-type(1) hr:last-child {
+    margin-top:80px;
+}
+.pay div:nth-of-type(1) div:nth-of-type(2) p {
+    color:#999999;
+}
+.pay div:nth-of-type(1) div:nth-of-type(3) p:nth-of-type(odd) {
+    color:#999999;
+}
+.pay form div div span {
+    padding:2px 7px;
+    background-color: silver;
+    color:white!important;
+}
+.pay form div div a {
+    font-size:15px!important;
+}
+@media screen and (max-width:992px) {
+    .pay form div {
+        flex-wrap: wrap;
+    }
+    .pay form div div {
+        order: 2;
+        width: 100%;
+    }
+    .pay form button {
+        order: 1;
+        width: 100%;
+    }
+    .pay div:nth-of-type(1) div:nth-of-type(2) {
+        padding-left: 60px;
+    }
+    .pay svg {
+        transform: translateX(0%);
+    }
+}
+@media screen and (max-width:576px) {
+    .pay div:nth-of-type(1) div:nth-of-type(2) h4 {
+        font-size:23px;
+    }
+}

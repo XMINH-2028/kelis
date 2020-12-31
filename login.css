@@ -1,0 +1,183 @@
+
+.login-main{
+    text-align: center;
+    width: 80% !important;
+}
+.liner-or{
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #dfdfdf;
+    margin-top: 20px;
+}
+
+.login-main h4{
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.liner-or span{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -15px;
+    background: #fff;
+    display: inline-block;
+    padding: 5px;
+    color: #999999;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+.md-form input{
+    width: 100%;
+    margin: auto;
+    height: 40px;
+    border-radius: 0;
+    font-weight: normal;
+    padding-top: 0;
+    padding-bottom: 0;
+    outline: none !important;
+    box-shadow: none !important;
+    padding-left: 42px;
+    margin-bottom: 15px !important;
+    background: #f2f2f2;
+    border: none;
+    color: #777;
+    padding-left: 40px;
+}
+.md-form{
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+.md-form i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 14px;
+}
+.md-form span{
+    color: red;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+}
+.md-form button , .md-form-in button{
+    width: 100%;
+    color: #777;
+    background-color: white;
+    border: 1px solid gainsboro;
+    margin: 10px 0;
+}
+.md-form a{
+    color: #777;
+    text-align: center;
+    font-size: 10px;
+}
+.md-form-in{
+    width: 80%;
+    margin: auto;
+}
+.md-form-in input{
+    color: #777;
+    margin-left: -20px;
+}
+.md-form-in a{
+    color: #49a010;
+    font-size: 12px;
+}
+.md-form-in i{
+    color: #777;
+    font-size: 14px;
+}
+.md-form-hidden{
+    width: 80%;
+    margin: auto;
+    color: #777;
+    font-size: 14px;
+    text-align: left;
+}
+.md-form-hidden input{
+    width: 100%;
+    margin: auto;
+    height: 40px;
+    border-radius: 0;
+    font-weight: normal;
+    padding-top: 0;
+    padding-bottom: 0;
+    outline: none !important;
+    box-shadow: none !important;
+    padding-left: 42px;
+    margin-bottom: 15px !important;
+    background: #f2f2f2;
+    border: none;
+    color: #777;
+    padding-left: 40px;
+}
+.md-form-hidden button{
+    width: 100%;
+    color: #777;
+    background-color: white;
+    border: 1px solid gainsboro;
+    margin: 10px 0;
+}
+.md-form-hidden span{
+    font-size: 12px;
+    margin-left: 5px;
+}
+.md-form-hidden h6{
+    margin-top: 20px;
+    color: #4480fc;
+    text-align: center;
+    cursor: pointer;
+}
+.md-form h6{
+    cursor: pointer;
+}
+.reset-pass{
+    display: none;
+}
+.btn-fb {
+    background-color:#546ea6;
+    border-radius:25px;
+    line-height:30px;
+}
+.btn-gplus {
+    background-color:#df5656;
+    border-radius:25px;
+    line-height:30px;
+}
+.btn-gplus img {
+    width: 35px;
+    border-radius: 25px;
+}
+.btn-fb:hover {
+    opacity: 0.7;
+}
+.btn-gplus:hover {
+    opacity: 0.7;
+}
+
+
+@media only screen and (max-width:992px){
+    .login-main{
+        width: 90% !important;
+    }
+
+}
+
+@media only screen and (max-width:400px){
+    .md-form-in div {
+        flex-wrap: wrap;
+    }
+    .md-form-in div p {
+        width: 100%;
+
+}
+
+}

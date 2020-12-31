@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="view.css">
+<link rel="stylesheet" href="search.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Volkhov&display=swap" rel="stylesheet">
+<title>View_product</title>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <div id="topsite">
+            <div id="topsite_top" class="w-100 px-5 py-3 d-flex justify-content-center align-items-center">
+                <ul class="d-flex list-unstyled px-3 align-items-center mb-0 w-50">
+                    <li class="px-2"><a href="login.html">Đăng ký</a></li>
+                    <li class="border-left px-2"><a href="login.html">Đăng nhập</a></li>
+                </ul>
+                <ul class="d-flex list-unstyled px-3 align-items-center mb-0 w-50 justify-content-end">
+                    <li class="pr-3"><a href="home.html" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="pl-1 pr-3"><a href="home.html" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li class="pl-1 pr-3"><a href="home.html" target="_blank"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li class="pl-1 pr-3"><a href="home.html" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                    <li class="pl-1 pr-3"><a href="home.html" target="_blank"><i class="fab fa-skype"></i></a></li>
+                </ul>
+            </div>
+            <div id="container" class="bg-white d-flex justify-content-center align-items-center">
+                <div id="topsite_main" class="row mx-0 w-100">
+                    <div class="col-2 d-flex justify-content-center align-items-center">
+                         <i class="fas fa-search"></i>
+                     </div>
+                     <div class="col-8 d-flex justify-content-center align-items-center logo_pd">
+                         <a href="home.html"><img src="images/logo_hd.png" alt="" class="h-100"></a>
+                     </div>
+                     <div class="col-2 d-flex justify-content-center align-items-center parent_cart">
+                         <div class="position-relative d-flex justify-content-center align-items-center pl-0 pb-4 pt-4 pr-0">
+                             <a href="" class="cart_hover">
+                                 <i class="fas fa-shopping-basket "></i>
+                                 <span class="count_sp text-white">0</span>
+                             </a>
+                             <div class="bg-white info_cart text-dark text-nowrap border bg-white pt-2 text-center">
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+            <div id="topsite_main_" class="row mx-0">
+                 <div class="col-3 d-flex justify-content-center align-items-center pr-0">
+                    <img src="images/3gach.png" alt="" class="3gach">
+                    <img src="images/3cham.png" alt="" class="pl-1 3cham">
+                 </div>
+                 <div class="col-6 d-flex justify-content-center align-items-center logo_pd">
+                     <a href="#"><img src="images/logo_hd.png" alt="" class=""></a>
+                 </div>
+                 <div class="col-3 d-flex justify-content-center align-items-center pl-0 parent_cart">
+                    <div class="position-relative d-flex justify-content-center align-items-center pl-0 pb-4 pt-4 pr-0">
+                        <a href="#" class="cart_hover">
+                            <i class="fas fa-shopping-basket "></i>
+                            <span class="count_sp text-white">0</span>
+                        </a>
+                        <div class="bg-white info_cart text-dark text-nowrap border bg-white pt-2 text-center">
+                        </div>
+                    </div>
+                    <i class="fas fa-search ml-3"></i>
+                 </div> 
+            </div>
+            <nav class="navbar_pc w-100 position-relative">
+                <ul class="navbar-nav w-100 navbar_nav">
+                    <li class="nav-item active border-bottom px-3 py-2 mx-2">
+                        <a class="nav-link" href="home.html"><abbr title="Trang chủ">TRANG CHỦ</abbr></a>
+                    </li>
+                    <li class="nav-item dropdown_ border-bottom px-3 py-2 dropdown mx-2">
+                        <a class="nav-link d-flex align-items-center nav_dr" href="#">
+                            <abbr title="Sản phẩm" class="mr-auto">SẢN PHẨM</abbr>
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="list-unstyled pt-3 px-3 pb-3 dropdown_hidd dropdown_menu">
+                            <li class="pt-1">
+                                <ul class="list-unstyled">
+                                    <a href="product.html"><span class="font-weight-bold text-dark">RAU CỦ SẠCH</span></a>
+                                    <hr class="mt-0 ml-0 text-left mb-2">
+                                    <li><a href="product.html"><i class="fas fa-arrow-right mr-2"></i>Rau củ Đà Lạt</a></li>
+                                    <li><a href="product.html"><i class="fas fa-arrow-right mr-2"></i>Rau củ nhập khẩu</a></li>
+                                    <li><a href="product.html"><i class="fas fa-arrow-right mr-2"></i>Rau củ tươi</a></li>
+                                    <li><a href="product.html"><i class="fas fa-arrow-right mr-2"></i>Thực phẩm</a></li>
+                                </ul>
+                            </li>
+                            <li class="pt-1">
+                                <ul class="list-unstyled">
+                                    <a href="product.html"><span class="font-weight-bold text-dark">TRÁI CÂY SẠCH</span></a>
+                                    <hr class="mt-0 ml-0 text-left mb-2">
+                                    <li><a href="product.html"><i class="fas fa-arrow-right mr-2"></i>Trái cây tươi</a></li>
+                                    <li><a href="product.html"><i class="fas fa-arrow-right mr-2"></i>Tốt cho bé</a></li>
+                                    <li><a href="product.html"><i class="fas fa-arrow-right mr-2"></i>Tốt cho mẹ</a></li>
+                                    <li><a href="product.html"><i class="fas fa-arrow-right mr-2"></i>Cherry Mỹ</a></li>
+                                </ul>
+                            </li>
+                            <li class="pt-1">
+                                <ul class="list-unstyled">
+                                    <a href="product.html"><span class="font-weight-bold text-dark">THỊT TRỨNG SẠCH</span></a>
+                                    <hr class="mt-0 ml-0 text-left mb-2">
+                                    <li><a href="product.html"><i class="fas fa-arrow-right mr-2"></i>Thịt bò nhập khẩu</a></li>
+                                    <li><a href="product.html"><i class="fas fa-arrow-right mr-2"></i>Thịt gà ta</a></li>
+                                    <li><a href="product.html"><i class="fas fa-arrow-right mr-2"></i>Trứng gà ta</a></li>
+                                    <li><a href="product.html"><i class="fas fa-arrow-right mr-2"></i>Sữa bò nguyên chất</a></li>
+                                </ul>
+                            </li>
+                            <li class="pt-1">
+                                <ul class="list-unstyled">
+                                    <a href="product.html"><span class="font-weight-bold text-dark">NHẬP KHẨU</span></a>
+                                    <hr class="mt-0 ml-0 text-left mb-2">
+                                    <li><a href="product.html"><i class="fas fa-arrow-right mr-2"></i>Hàng nhập từ Mỹ</a></li>
+                                    <li><a href="product.html"><i class="fas fa-arrow-right mr-2"></i>Hàng nhập từ Nga</a></li>
+                                    <li><a href="product.html"><i class="fas fa-arrow-right mr-2"></i>Hàng nhập từ Anh</a></li>
+                                    <li><a href="product.html"><i class="fas fa-arrow-right mr-2"></i>Hàng nhập từ Pháp</a></li>
+                                </ul>
+                            </li>
+                            <li class="pt-1">
+                                <ul class="list-unstyled">
+                                    <a href="product.html"><span class="font-weight-bold text-dark">SỮA</span></a>
+                                    <hr class="mt-0 ml-0 text-left mb-2">
+                                    <li><a href="product.html"><i class="fas fa-arrow-right mr-2"></i>Em bé</a></li>
+                                    <li><a href="product.html"><i class="fas fa-arrow-right mr-2"></i>Người lớn</a></li>
+                                    <li><a href="product.html"><i class="fas fa-arrow-right mr-2"></i>Thiếu niên</a></li>
+                                    <li><a href="product.html"><i class="fas fa-arrow-right mr-2"></i>Người già</a></li>
+                                </ul>
+                            </li>
+                            <li class="pt-1">
+                                <ul class="list-unstyled">
+                                    <a href="product.html"><span class="font-weight-bold text-dark">SALE</span></a>
+                                    <hr class="mt-0 ml-0 text-left mb-2">
+                                    <li><a href="product.html"><i class="fas fa-arrow-right mr-2"></i>Thực phẩm giảm giá</a></li>
+                                    <li><a href="product.html"><i class="fas fa-arrow-right mr-2"></i>Thịt giảm giá</a></li>
+                                    <li><a href="product.html"><i class="fas fa-arrow-right mr-2"></i>Sữa giảm giá</a></li>
+                                    <li><a href="product.html"><i class="fas fa-arrow-right mr-2"></i>Trái cây giảm giá</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item border-bottom px-3 py-2 mx-2">
+                        <a class="nav-link" href="sale.html"><abbr title="Khuyến mãi">KHUYẾN MÃI</abbr></a>
+                    </li>
+                    <li class="nav-item border-bottom px-3 py-2 mx-2">
+                        <a class="nav-link" href="news.html"><abbr title="Tin tức">TIN TỨC</abbr></a>
+                    </li>
+                    <li class="nav-item border-bottom px-3 py-2 mx-2">
+                        <a class="nav-link" href="contact.html"><abbr title="Liên hệ">LIÊN HỆ</abbr></a>
+                    </li>    
+                </ul>
+                <div id="topsite_top_" class="w-100">
+                    <ul class="list-unstyled px-5 mb-0 ul_translate">
+                        <li class="px-2"><a href="login.html">Đăng ký</a></li>
+                        <li class="px-2"><a href="login.html">Đăng nhập</a></li>
+                    </ul>
+                </div>
+                <div class="nav_mark position-absolute">
+                </div>
+            </nav>  
+        </div>
+        <div id="mainsite">
+            <div class="banner-breadcrumb mb-0">
+                <div class="banner-contact">
+                    <h2>GIỎ HÀNG CỦA BẠN - VEGETABLES-TMT</h2>
+                    <nav aria-label="breadcrumb" class="breadcrumb mb-0">
+                        <ol class="breadcrumb">
+                        <li class="text-white"><a href="#">Trang chủ / </a></li>
+                        <li class="text-white ml-1">Sản phẩm khuyến mãi / </li>
+                        <li class="text-white ml-1">Ớt chuông vàng</li>
+                        </ol>
+                    </nav>
+                </div>  
+            </div>
+            <div class="view-content row mt-0 mt-md-4">
+                <div class="col-md-5 px-0 pr-md-5">
+                    <div class="d-flex justify-content-center align-items-center wrapper_zoom">
+                        <div class="mb-3 position-relative" id="div_zoom_in">
+                            <img src="images/otchuongvang.png" alt="" id="zoom_in" class="w-100 h-100">
+                            <div class="position-absolute" id="div_move">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view-list-product d-flex">
+                        <div class="view_list mx-1 view_list_active">
+                            <img src="images/otchuongvang.png" alt="">
+                        </div>
+                        <div class="view_list mx-1">
+                            <img src="images/khoaimon.png" alt="">
+                        </div>
+                        <div class="view_list mx-1">
+                            <img src="images/xoaidomy.png" alt="">
+                        </div>
+                        <div class="view_list mx-1">
+                            <img src="images/Cranberry.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 position-relative px-0">
+                    <div class="wrap_zoom">
+                        <div class="position-relative bg-white" id="zoom_out">
+                            <img src="images/otchuongvang.png" alt="" class="w-100 h-100 position-absolute" id="img_zoom">
+                        </div>
+                    </div>
+                    <div class="under_zoom">
+                        <h2 class="mt-3 mt-md-0">Ớt chuông vàng</h2>
+                        <div class="my-3"></div>
+                        <span>70,000<ins>đ</ins></span> <br> <br>
+                        <strong>Trạng thái:</strong> <span>Còn hàng</span>
+                        <p class="mt-3">Giá trị dinh dưỡng:   Nho tươi cung cấp các chất dinh dưỡng, làm giảm mệt nhọc ngay lập tức. Các nghiên cứu cho thấy Nho tươi có chứa vitamin A, C, Calcium và sắt...
+                            Mã hàng:Thể loại: Rau, quả hữu cơ, Rau quả bán chạy, Rau, quả tốt cho người già,Rau quả có lợi cho sức khỏe, Rau, quả nhập khẩu, Rau, quả trong nước, Sản phẩm nổi bật, Trang chủ,</p>
+                        <hr>
+                        <form action="#" id="form-pro" method="get" class="pt-4 d-flex justify-content-start align-items-center">
+                            <input type="button" value="-" field="quantity" class="text-center mx-1 mb-4 inp1">
+                            <input type="text" name="quanity" value="1" field="quantity" class="text-center mx-1 mb-4 inp3">
+                            <input type="button" value="+" field="quantity" class=" text-center mx-1 mr-5 mb-4 inp2">
+                            <button type="button" class="mb-4">Thêm vào giỏ</button>
+                        </form>
+                        <hr>
+                        <div class="view-content-item">
+                            <p class="mb-0"><strong>MÃ SẢN PHẨM:</strong> Null</p>
+                        </div>
+                        <div class="view-content-item d-flex align-items-center">
+                            <strong>CHIA SẺ:</strong>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f ml-3 mr-2"></i></a>
+                            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter mx-2"></i></a>
+                            <a href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest mx-2"></i></a>
+                            <a href="https://www.google.com" target="_blank"><i class="fab fa-google-plus-g mx-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-content mt-5">
+               <div class="tab-style position-relative w-100">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="tab-style-1 position-relative tab-style_">
+                            <h2 class="text-nowrap description">MÔ TẢ SẢN PHẨM <span></span></h2>
+                        </div>
+                        <div class="tab-style-2 position-relative tab-style_">
+                            <h2 class="text-nowrap comment">BÌNH LUẬN <span></span></h2>
+                        </div>
+                    </div>
+                    <hr class="position-absolute w-100">
+               </div>
+                <div class="content-style-1">
+                    <strong><a href="">Giá trị dinh dưỡng:</a> Ớt chuông vàng </strong>cung cấp các chất dinh dưỡng, làm giảm mệt nhọc ngay lập tức. Các nghiên cứu cho thấy Nho tươi có chứa vitamin A, C, Calcium và sắt...
+                    Mã hàng:Thể loại: Rau, quả hữu cơ, Rau quả bán chạy, Rau, quả tốt cho người già,Rau quả có lợi cho sức khỏe, Rau, quả nhập khẩu, Rau, quả trong nước, Sản phẩm nổi bật, Trang chủ,
+                </div>
+                <div class="content-style-2">
+                    <iframe name="f2afe0c1ab0732" width="1000" height="100px" data-testid="fb:comments Facebook Social Plugin" title="fb:comments Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v2.8/plugins/comments.php?app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df389fb8afd8d614%26domain%3Dvegetables-tmt.myharavan.com%26origin%3Dhttps%253A%252F%252Fvegetables-tmt.myharavan.com%252Ff1f399ef9600edc%26relation%3Dparent.parent&amp;color_scheme=light&amp;container_width=0&amp;height=100&amp;href=https%3A%2F%2Fvegetables-tmt.myharavan.com%2Fproducts%2Fot-sung&amp;locale=vi_VN&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=" __idm_frm__="136" class="" style="border: none; visibility: visible; width: 100%; height: 287px;"></iframe>
+                </div>
+            </div>
+            <div class="why_kelis_title pt-4 pb-0 mt-3">
+                <h1 class="text-center font-weight-bold display-5 mb-5">Sản phẩm liên quan</h1>
+            </div>
+            <div id="special_pr">
+                <div class="special_pr_main d-flex px-5 flex-wrap ">
+                    <div class="px-3 py-0 my-3 pr_sale_item parent_img">
+                        <div class="special_pr_main_item border position-relative">
+                            <abbr title="Cranberry"><a href="" class="d-flex flex-wrap justify-content-center"><img src="images/Cranberry.png" alt="" class="w-100"><br>
+                                <span class="text-dark">Cranberry</span></a></abbr>
+                            <hr class="mx-auto hr_sample">
+                            <p class="text-center font-weight-bold">150,000<span>đ</span></p>
+                            <div class="specialprmainitem_select position-absolute d-flex w-100 justify-content-center">
+                                <abbr title="Thêm vào giỏ" class="rounded mx-1 rank1 rank"><i class="fa fa-shopping-basket "></i></abbr>
+                                <abbr title="Xem chi tiết" class="rounded mx-1 rank2 rank"><a href="#"><i class="fas fa-exchange-alt"></i></a></abbr>
+                                <abbr title="Xem nhanh" class="rounded mx-1 rank3 rank"><i class="fa fa-eye"></i></abbr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 py-0 my-3 pr_sale_item parent_img">
+                        <div class="special_pr_main_item border position-relative">
+                            <abbr title="Đào tiên Úc"><a href="" class="d-flex flex-wrap justify-content-center"><img src="images/daotienuc.png" alt="" class="w-100"><br>
+                                <span class="text-dark">Đào tiên Úc</span></a></abbr>
+                            <hr class="mx-auto hr_sample">
+                            <p class="text-center font-weight-bold">150,000<span>đ</span></p>
+                            <div class="specialprmainitem_select position-absolute d-flex w-100 justify-content-center">
+                                <abbr title="Thêm vào giỏ" class="rounded mx-1 rank1 rank"><i class="fa fa-shopping-basket "></i></abbr>
+                                <abbr title="Xem chi tiết" class="rounded mx-1 rank2 rank"><a href="#"><i class="fas fa-exchange-alt"></i></a></abbr>
+                                <abbr title="Xem nhanh" class="rounded mx-1 rank3 rank"><i class="fa fa-eye"></i></abbr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 py-0 my-3 pr_sale_item parent_img">
+                        <div class="special_pr_main_item border position-relative">
+                            <abbr title="Khoai môn"><a href="" class="d-flex flex-wrap justify-content-center"><img src="images/khoaimon.png" alt="" class="w-100"><br>
+                                <span class="text-dark">Khoai môn</span></a></abbr>
+                            <hr class="mx-auto hr_sample">
+                            <p class="text-center font-weight-bold">150,000<span>đ</span></p>
+                            <div class="specialprmainitem_select position-absolute d-flex w-100 justify-content-center">
+                                <abbr title="Thêm vào giỏ" class="rounded mx-1 rank1 rank"><i class="fa fa-shopping-basket "></i></abbr>
+                                <abbr title="Xem chi tiết" class="rounded mx-1 rank2 rank"><a href="#"><i class="fas fa-exchange-alt"></i></a></abbr>
+                                <abbr title="Xem nhanh" class="rounded mx-1 rank3 rank"><i class="fa fa-eye"></i></abbr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 py-0 my-3 pr_sale_item parent_img">
+                        <div class="special_pr_main_item border position-relative">
+                            <abbr title="Ớt chuông vàng"><a href="" class="d-flex flex-wrap justify-content-center"><img src="images/otchuongvang.png" alt="" class="w-100"><br>
+                                <span class="text-dark">Ớt chuông vàng</span></a></abbr>
+                            <hr class="mx-auto hr_sample">
+                            <p class="text-center font-weight-bold">150,000<span>đ</span></p>
+                            <div class="specialprmainitem_select position-absolute d-flex w-100 justify-content-center">
+                                <abbr title="Thêm vào giỏ" class="rounded mx-1 rank1 rank"><i class="fa fa-shopping-basket "></i></abbr>
+                                <abbr title="Xem chi tiết" class="rounded mx-1 rank2 rank"><a href="#"><i class="fas fa-exchange-alt"></i></a></abbr>
+                                <abbr title="Xem nhanh" class="rounded mx-1 rank3 rank"><i class="fa fa-eye"></i></abbr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 py-0 my-3 pr_sale_item parent_img">
+                        <div class="special_pr_main_item border position-relative">
+                            <abbr title="Ớt sừng"><a href="" class="d-flex flex-wrap justify-content-center"><img src="images/otsung.png" alt="" class="w-100"><br>
+                                <span class="text-dark">Ớt sừng</span></a></abbr>
+                            <hr class="mx-auto hr_sample">
+                            <p class="text-center font-weight-bold">150,000<span>đ</span></p>
+                            <div class="specialprmainitem_select position-absolute d-flex w-100 justify-content-center">
+                                <abbr title="Thêm vào giỏ" class="rounded mx-1 rank1 rank rank"><i class="fa fa-shopping-basket "></i></abbr>
+                                <abbr title="Xem chi tiết" class="rounded mx-1 rank2 rank"><a href="#"><i class="fas fa-exchange-alt"></i></a></abbr>
+                                <abbr title="Xem nhanh" class="rounded mx-1 rank3 rank"><i class="fa fa-eye"></i></abbr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 py-0 my-3 pr_sale_item parent_img">
+                        <div class="special_pr_main_item border position-relative">
+                            <abbr title="Su su non"><a href="" class="d-flex flex-wrap justify-content-center"><img src="images/susunon.png" alt="" class="w-100"><br>
+                                <span class="text-dark">Su su non</span></a></abbr>
+                            <hr class="mx-auto hr_sample">
+                            <p class="text-center font-weight-bold">150,000<span>đ</span></p>
+                            <div class="specialprmainitem_select position-absolute d-flex w-100 justify-content-center">
+                                <abbr title="Thêm vào giỏ" class="rounded mx-1 rank1 rank"><i class="fa fa-shopping-basket "></i></abbr>
+                                <abbr title="Xem chi tiết" class="rounded mx-1 rank2 rank"><a href="#"><i class="fas fa-exchange-alt"></i></a></abbr>
+                                <abbr title="Xem nhanh" class="rounded mx-1 rank3 rank"><i class="fa fa-eye"></i></abbr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 py-0 my-3 pr_sale_item parent_img">
+                        <div class="special_pr_main_item border position-relative">
+                            <abbr title="Sữa meiji số 9 820g (1-3tuổi)"><a href="" class="d-flex flex-wrap justify-content-center"><img src="images/meiji9.jpg" alt="" class="w-100"><br>
+                                <span class="text-dark text-nowrap">Sữa meiji số 9 820g (1-3 tuổi)</span></a></abbr>
+                            <hr class="mx-auto hr_sample hr_sample">
+                            <p class="text-center font-weight-bold">150,000<span>đ</span></p>
+                            <div class="specialprmainitem_select position-absolute d-flex w-100 justify-content-center">
+                                <abbr title="Thêm vào giỏ" class="rounded mx-1 rank1 rank"><i class="fa fa-shopping-basket "></i></abbr>
+                                <abbr title="Xem chi tiết" class="rounded mx-1 rank2 rank"><a href="#"><i class="fas fa-exchange-alt"></i></a></abbr>
+                                <abbr title="Xem nhanh" class="rounded mx-1 rank3 rank"><i class="fa fa-eye"></i></abbr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 py-0 my-3 pr_sale_item parent_img">
+                        <div class="special_pr_main_item border position-relative">
+                            <abbr title="Sữa Pediasure ba 850g (1-10 tuổi)"><a href="" class="d-flex flex-wrap justify-content-center"><img src="images/pediasureba.png" alt="" class="w-100"><br>
+                                <span class="text-dark text-nowrap">Sữa Pediasure ba 850g (1-10 tuổi)</span></a></abbr>
+                            <hr class="mx-auto hr_sample">
+                            <p class="text-center font-weight-bold">150,000<span>đ</span></p>
+                            <div class="specialprmainitem_select position-absolute d-flex w-100 justify-content-center">
+                                <abbr title="Thêm vào giỏ" class="rounded mx-1 rank1 rank"><i class="fa fa-shopping-basket "></i></abbr>
+                                <abbr title="Xem chi tiết" class="rounded mx-1 rank2 rank"><a href="#"><i class="fas fa-exchange-alt"></i></a></abbr>
+                                <abbr title="Xem nhanh" class="rounded mx-1 rank3 rank"><i class="fa fa-eye"></i></abbr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 py-0 my-3 pr_sale_item parent_img">
+                        <div class="special_pr_main_item border position-relative">
+                            <abbr title="Sườn non"><a href="" class="d-flex flex-wrap justify-content-center"><img src="images/suonnon.png" alt="" class="w-100"><br>
+                                <span class="text-dark">Sườn non</span></a></abbr>
+                            <hr class="mx-auto hr_sample">
+                            <p class="text-center font-weight-bold">150,000<span>đ</span></p>
+                            <div class="specialprmainitem_select position-absolute d-flex w-100 justify-content-center">
+                                <abbr title="Thêm vào giỏ" class="rounded mx-1 rank1 rank"><i class="fa fa-shopping-basket "></i></abbr>
+                                <abbr title="Xem chi tiết" class="rounded mx-1 rank2 rank"><a href="#"><i class="fas fa-exchange-alt"></i></a></abbr>
+                                <abbr title="Xem nhanh" class="rounded mx-1 rank3 rank"><i class="fa fa-eye"></i></abbr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 py-0 my-3 pr_sale_item parent_img">
+                        <div class="special_pr_main_item border position-relative">
+                            <abbr title="Xoài đỏ Mỹ"><a href="" class="d-flex flex-wrap justify-content-center"><img src="images/xoaidomy.png" alt="" class="w-100"><br>
+                                <span class="text-dark">Xoài đỏ Mỹ</span></a></abbr>
+                            <hr class="mx-auto hr_sample">
+                            <p class="text-center font-weight-bold">150,000<span>đ</span></p>
+                            <div class="specialprmainitem_select position-absolute d-flex w-100 justify-content-center">
+                                <abbr title="Thêm vào giỏ" class="rounded mx-1 rank1 rank"><i class="fa fa-shopping-basket "></i></abbr>
+                                <abbr title="Xem chi tiết" class="rounded mx-1 rank2 rank"><a href="#"><i class="fas fa-exchange-alt"></i></a></abbr>
+                                <abbr title="Xem nhanh" class="rounded mx-1 rank3 rank"><i class="fa fa-eye"></i></abbr>
+                            </div>
+                        </div>
+                    </div>
+                    <!--pr_hot-->
+                    <div class="px-3 py-0 my-3 pr_hot_item parent_img">
+                        <div class="special_pr_main_item border position-relative">
+                            <abbr title="Sữa meiji số 9 820g (1-3tuổi)"><a href="" class="d-flex flex-wrap justify-content-center"><img src="images/meiji9.jpg" alt="" class="w-100"><br>
+                                <span class="text-dark text-nowrap">Sữa meiji số 9 820g (1-3 tuổi)</span></a></abbr>
+                            <hr class="mx-auto hr_sample hr_sample">
+                            <p class="text-center font-weight-bold">150,000<span>đ</span></p>
+                            <div class="specialprmainitem_select position-absolute d-flex w-100 justify-content-center">
+                                <abbr title="Thêm vào giỏ" class="rounded mx-1 rank1 rank"><i class="fa fa-shopping-basket "></i></abbr>
+                                <abbr title="Xem chi tiết" class="rounded mx-1 rank2 rank"><a href="#"><i class="fas fa-exchange-alt"></i></a></abbr>
+                                <abbr title="Xem nhanh" class="rounded mx-1 rank3 rank"><i class="fa fa-eye"></i></abbr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 py-0 my-3 pr_hot_item parent_img">
+                        <div class="special_pr_main_item border position-relative">
+                            <abbr title="Sữa Pediasure ba 850g (1-10 tuổi)"><a href="" class="d-flex flex-wrap justify-content-center"><img src="images/pediasureba.png" alt="" class="w-100"><br>
+                                <span class="text-dark text-nowrap">Sữa Pediasure ba 850g (1-10 tuổi)</span></a></abbr>
+                            <hr class="mx-auto hr_sample">
+                            <p class="text-center font-weight-bold">150,000<span>đ</span></p>
+                            <div class="specialprmainitem_select position-absolute d-flex w-100 justify-content-center">
+                                <abbr title="Thêm vào giỏ" class="rounded mx-1 rank1 rank"><i class="fa fa-shopping-basket "></i></abbr>
+                                <abbr title="Xem chi tiết" class="rounded mx-1 rank2 rank"><a href="#"><i class="fas fa-exchange-alt"></i></a></abbr>
+                                <abbr title="Xem nhanh" class="rounded mx-1 rank3 rank"><i class="fa fa-eye"></i></abbr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 py-0 my-3 pr_hot_item parent_img">
+                        <div class="special_pr_main_item border position-relative">
+                            <abbr title="Sườn non"><a href="" class="d-flex flex-wrap justify-content-center"><img src="images/suonnon.png" alt="" class="w-100"><br>
+                                <span class="text-dark">Sườn non</span></a></abbr>
+                            <hr class="mx-auto hr_sample">
+                            <p class="text-center font-weight-bold">150,000<span>đ</span></p>
+                            <div class="specialprmainitem_select position-absolute d-flex w-100 justify-content-center">
+                                <abbr title="Thêm vào giỏ" class="rounded mx-1 rank1 rank"><i class="fa fa-shopping-basket "></i></abbr>
+                                <abbr title="Xem chi tiết" class="rounded mx-1 rank2 rank"><a href="#"><i class="fas fa-exchange-alt"></i></a></abbr>
+                                <abbr title="Xem nhanh" class="rounded mx-1 rank3 rank"><i class="fa fa-eye"></i></abbr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 py-0 my-3 pr_hot_item parent_img">
+                        <div class="special_pr_main_item border position-relative">
+                            <abbr title="Xoài đỏ Mỹ"><a href="" class="d-flex flex-wrap justify-content-center"><img src="images/xoaidomy.png" alt="" class="w-100"><br>
+                                <span class="text-dark">Xoài đỏ Mỹ</span></a></abbr>
+                            <hr class="mx-auto hr_sample">
+                            <p class="text-center font-weight-bold">150,000<span>đ</span></p>
+                            <div class="specialprmainitem_select position-absolute d-flex w-100 justify-content-center">
+                                <abbr title="Thêm vào giỏ" class="rounded mx-1 rank1 rank"><i class="fa fa-shopping-basket "></i></abbr>
+                                <abbr title="Xem chi tiết" class="rounded mx-1 rank2 rank"><a href="#"><i class="fas fa-exchange-alt"></i></a></abbr>
+                                <abbr title="Xem nhanh" class="rounded mx-1 rank3 rank"><i class="fa fa-eye"></i></abbr>
+                            </div>
+                        </div>
+                    </div>
+                    <!--pr_highlight-->
+                    <div class="px-3 py-0 my-3 pr_highlight_item parent_img">
+                        <div class="special_pr_main_item border position-relative">
+                            <abbr title="Khoai môn"><a href="" class="d-flex flex-wrap justify-content-center"><img src="images/khoaimon.png" alt="" class="w-100"><br>
+                                <span class="text-dark">Khoai môn</span></a></abbr>
+                            <hr class="mx-auto hr_sample">
+                            <p class="text-center font-weight-bold">150,000<span>đ</span></p>
+                            <div class="specialprmainitem_select position-absolute d-flex w-100 justify-content-center">
+                                <abbr title="Thêm vào giỏ" class="rounded mx-1 rank1 rank"><i class="fa fa-shopping-basket "></i></abbr>
+                                <abbr title="Xem chi tiết" class="rounded mx-1 rank2 rank"><a href="#"><i class="fas fa-exchange-alt"></i></a></abbr>
+                                <abbr title="Xem nhanh" class="rounded mx-1 rank3 rank"><i class="fa fa-eye"></i></abbr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 py-0 my-3 pr_highlight_item parent_img">
+                        <div class="special_pr_main_item border position-relative">
+                            <abbr title="Nạc xay heo (hữu cơ)"><a href="" class="d-flex flex-wrap justify-content-center"><img src="images/daotienuc.png" alt="" class="w-100"><br>
+                                <span class="text-dark">Nạc xay heo (hữu cơ)</span></a></abbr>
+                            <hr class="mx-auto hr_sample">
+                            <p class="text-center font-weight-bold">50,000<span>đ</span></p>
+                            <div class="specialprmainitem_select position-absolute d-flex w-100 justify-content-center">
+                                <abbr title="Thêm vào giỏ" class="rounded mx-1 rank1 rank"><i class="fa fa-shopping-basket "></i></abbr>
+                                <abbr title="Xem chi tiết" class="rounded mx-1 rank2 rank"><a href="#"><i class="fas fa-exchange-alt"></i></a></abbr>
+                                <abbr title="Xem nhanh" class="rounded mx-1 rank3 rank"><i class="fa fa-eye"></i></abbr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 py-0 my-3 pr_highlight_item parent_img">
+                        <div class="special_pr_main_item border position-relative">
+                            <abbr title="Ớt sừng"><a href="" class="d-flex flex-wrap justify-content-center"><img src="images/otsung.png" alt="" class="w-100"><br>
+                                <span class="text-dark">Ớt sừng</span></a></abbr>
+                            <hr class="mx-auto hr_sample">
+                            <p class="text-center font-weight-bold">150,000<span>đ</span></p>
+                            <div class="specialprmainitem_select position-absolute d-flex w-100 justify-content-center">
+                                <abbr title="Thêm vào giỏ" class="rounded mx-1 rank1 rank rank"><i class="fa fa-shopping-basket "></i></abbr>
+                                <abbr title="Xem chi tiết" class="rounded mx-1 rank2 rank"><a href="#"><i class="fas fa-exchange-alt"></i></a></abbr>
+                                <abbr title="Xem nhanh" class="rounded mx-1 rank3 rank"><i class="fa fa-eye"></i></abbr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 py-0 my-3 pr_highlight_item parent_img">
+                        <div class="special_pr_main_item border position-relative">
+                            <abbr title="Phúc bồn tử"><a href="" class="d-flex flex-wrap justify-content-center"><img src="images/otchuongvang.png" alt="" class="w-100"><br>
+                                <span class="text-dark">Phúc bồn tử</span></a></abbr>
+                            <hr class="mx-auto hr_sample">
+                            <p class="text-center font-weight-bold">46,000<span>đ</span></p>
+                            <div class="specialprmainitem_select position-absolute d-flex w-100 justify-content-center">
+                                <abbr title="Thêm vào giỏ" class="rounded mx-1 rank1 rank"><i class="fa fa-shopping-basket "></i></abbr>
+                                <abbr title="Xem chi tiết" class="rounded mx-1 rank2 rank"><a href="#"><i class="fas fa-exchange-alt"></i></a></abbr>
+                                <abbr title="Xem nhanh" class="rounded mx-1 rank3 rank"><i class="fa fa-eye"></i></abbr>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="px-3 py-0 my-3 pr_highlight_item parent_img">
+                        <div class="special_pr_main_item border position-relative">
+                            <abbr title="Sữa glico icereo số 0 800g (1-9 tháng)"><a href="" class="d-flex flex-wrap justify-content-center"><img src="images/susunon.png" alt="" class="w-100"><br>
+                                <span class="text-dark text-nowrap">Sữa glico icereo số 0 800g (1-9 tháng)</span></a></abbr>
+                            <hr class="mx-auto hr_sample">
+                            <p class="text-center font-weight-bold">1,500,000<span>đ</span></p>
+                            <div class="specialprmainitem_select position-absolute d-flex w-100 justify-content-center">
+                                <abbr title="Thêm vào giỏ" class="rounded mx-1 rank1 rank"><i class="fa fa-shopping-basket "></i></abbr>
+                                <abbr title="Xem chi tiết" class="rounded mx-1 rank2 rank"><a href="#"><i class="fas fa-exchange-alt"></i></a></abbr>
+                                <abbr title="Xem nhanh" class="rounded mx-1 rank3 rank"><i class="fa fa-eye"></i></abbr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 py-0 my-3 pr_highlight_item parent_img">
+                        <div class="special_pr_main_item border position-relative">
+                            <abbr title="Sữa meiji số 9 820g (1-3tuổi)"><a href="" class="d-flex flex-wrap justify-content-center"><img src="images/meiji9.jpg" alt="" class="w-100"><br>
+                                <span class="text-dark text-nowrap">Sữa meiji số 9 820g (1-3 tuổi)</span></a></abbr>
+                            <hr class="mx-auto hr_sample hr_sample">
+                            <p class="text-center font-weight-bold">150,000<span>đ</span></p>
+                            <div class="specialprmainitem_select position-absolute d-flex w-100 justify-content-center">
+                                <abbr title="Thêm vào giỏ" class="rounded mx-1 rank1 rank"><i class="fa fa-shopping-basket "></i></abbr>
+                                <abbr title="Xem chi tiết" class="rounded mx-1 rank2 rank"><a href="#"><i class="fas fa-exchange-alt"></i></a></abbr>
+                                <abbr title="Xem nhanh" class="rounded mx-1 rank3 rank"><i class="fa fa-eye"></i></abbr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 py-0 my-3 pr_highlight_item parent_img">
+                        <div class="special_pr_main_item border position-relative">
+                            <abbr title="Sữa Pediasure ba 850g (1-10 tuổi)"><a href="" class="d-flex flex-wrap justify-content-center"><img src="images/pediasureba.png" alt="" class="w-100"><br>
+                                <span class="text-dark text-nowrap">Sữa Pediasure ba 850g (1-10 tuổi)</span></a></abbr>
+                            <hr class="mx-auto hr_sample">
+                            <p class="text-center font-weight-bold">150,000<span>đ</span></p>
+                            <div class="specialprmainitem_select position-absolute d-flex w-100 justify-content-center">
+                                <abbr title="Thêm vào giỏ" class="rounded mx-1 rank1 rank"><i class="fa fa-shopping-basket "></i></abbr>
+                                <abbr title="Xem chi tiết" class="rounded mx-1 rank2 rank"><a href="#"><i class="fas fa-exchange-alt"></i></a></abbr>
+                                <abbr title="Xem nhanh" class="rounded mx-1 rank3 rank"><i class="fa fa-eye"></i></abbr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 py-0 my-3 pr_highlight_item parent_img">
+                        <div class="special_pr_main_item border position-relative">
+                            <abbr title="Sữa s-26 gold số 4 - 900g (1 đến 2 tuổi)"><a href="" class="d-flex flex-wrap justify-content-center"><img src="images/suonnon.png" alt="" class="w-100"><br>
+                                <span class="text-dark text-nowrap">Sữa s-26 gold số 4 - 900g (1 đến 2 tuổi)</span></a></abbr>
+                            <hr class="mx-auto hr_sample">
+                            <p class="text-center font-weight-bold">500,000<span>đ</span></p>
+                            <div class="specialprmainitem_select position-absolute d-flex w-100 justify-content-center">
+                                <abbr title="Thêm vào giỏ" class="rounded mx-1 rank1 rank"><i class="fa fa-shopping-basket "></i></abbr>
+                                <abbr title="Xem chi tiết" class="rounded mx-1 rank2 rank"><a href="#"><i class="fas fa-exchange-alt"></i></a></abbr>
+                                <abbr title="Xem nhanh" class="rounded mx-1 rank3 rank"><i class="fa fa-eye"></i></abbr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 py-0 my-3 pr_highlight_item parent_img">
+                        <div class="special_pr_main_item border position-relative">
+                            <abbr title="Xoài đỏ Mỹ"><a href="" class="d-flex flex-wrap justify-content-center"><img src="images/xoaidomy.png" alt="" class="w-100"><br>
+                                <span class="text-dark text-nowrap">Sữa Similac iq intelli - Pro số 4 900g (2-6 tuổi)</span></a></abbr>
+                            <hr class="mx-auto hr_sample">
+                            <p class="text-center font-weight-bold">1,800,000<span>đ</span></p>
+                            <div class="specialprmainitem_select position-absolute d-flex w-100 justify-content-center">
+                                <abbr title="Thêm vào giỏ" class="rounded mx-1 rank1 rank"><i class="fa fa-shopping-basket"></i></abbr>
+                                <abbr title="Xem chi tiết" class="rounded mx-1 rank2 rank"><a href="#"><i class="fas fa-exchange-alt"></i></a></abbr>
+                                <abbr title="Xem nhanh" class="rounded mx-1 rank3 rank"><i class="fa fa-eye"></i></abbr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--search_result-->
+            <div class="search_container">
+                <div class="banner-breadcrumb mb-0">
+                    <div class="banner-contact">
+                        <h2 class="mb-0 ml-0">KẾT QUẢ TÌM KIẾM "<span class="label_pr">Ớt chuông vàng</span>" - VEGETABLES-TMT</h2>
+                        <nav aria-label="breadcrumb" class="breadcrumb mb-0">
+                            <ol class="breadcrumb">
+                                <li class="text-white"><a href="home.html">Trang chủ / </a><span class="ml-1">Tìm kiếm: "Kết quả tìm kiếm "<span class="label_pr">Ớt chuông vàng</span>" - Vegetables-TMT"</span></li>
+                            </ol>
+                        </nav>
+                    </div>  
+                </div>
+                <p class="pt-4 pl-4">Tìm thấy <span class="number_result">1</span> kết quả với từ khóa "<span class="name_result">Ớt chuông vàng</span>"...</p>
+                <div class="special_pr_main d-flex flex-wrap main_search px-lg-3">
+                    <div class="px-2 pt-4 pr_sale_item parent_img mb-3 mb-lg-0">
+                        <div class="special_pr_main_item border position-relative">
+                            <abbr title="Ớt chuông vàng"><a href="" class="d-flex flex-wrap justify-content-center"><img src="images/otchuongvang.png" alt="" class="w-100"><br>
+                                <span class="text-dark text-nowrap">Ớt chuông vàng</span></a></abbr>
+                            <hr class="mx-auto hr_sample">
+                            <p class="text-center font-weight-bold">70,000<span>đ</span></p>
+                            <div class="specialprmainitem_select position-absolute d-flex w-100 justify-content-center">
+                                <abbr title="Thêm vào giỏ" class="rounded mx-1 rank1 rank"><i class="fa fa-shopping-basket "></i></abbr>
+                                <abbr title="Xem chi tiết" class="rounded mx-1 rank2 rank"><a href="#"><i class="fas fa-exchange-alt"></i></a></abbr>
+                                <abbr title="Xem nhanh" class="rounded mx-1 rank3 rank"><i class="fa fa-eye"></i></abbr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--search_empty-->
+            <div class="search_empty"> 
+                <div class="banner-breadcrumb mb-0">
+                    <div class="banner-contact">
+                        <h2 class="mb-0 ml-0">KẾT QUẢ TÌM KIẾM "<span class="label_pr">Ớt chuông vàng</span>" - VEGETABLES-TMT</h2>
+                        <nav aria-label="breadcrumb" class="breadcrumb mb-0">
+                            <ol class="breadcrumb">
+                                <li class="text-white"><a href="home.html">Trang chủ / </a><span class="ml-1">Tìm kiếm: "Kết quả tìm kiếm "<span class="label_pr">Ớt chuông vàng</span>" - Vegetables-TMT"</span></li>
+                            </ol>
+                        </nav>
+                    </div>  
+                </div>
+                <div class="px-5 pt-4">
+                    <p>Tìm thấy 0 kết quả với từ khóa "<span class="label_pr">Ớt chuông vàng</span>"...</p>
+                </div>
+            </div>
+        </div>
+        
+        <!--footer-->
+        <div id="endsite" class="mt-5 position-relative margin_ft">
+            <p class="text-center pb-4"><a href="home.html"><img src="images/logo_ft.png" alt=""></a></p>
+            <ul class="list-unstyled d-flex align-items-center justify-content-center flex-wrap pb-4">
+               <li class="mx-4 mb-2"><a href="searchempty.html">TÌM KIẾM</a></li>
+               <li class="mx-4 mb-2"><a href="intro.html">GIỚI THIỆU</a></li>
+               <li class="mx-4 mb-2"><a href="policy.html">CHÍNH SÁCH ĐỔI TRẢ</a></li>
+               <li class="mx-4 mb-2"><a href="security.html">CHÍNH SÁCH BẢO MẬT</a></li>
+               <li class="mx-4 mb-2"><a href="service.html">ĐIỀU KHOẢN DỊCH VỤ</a></li>
+            </ul>
+            <ul class="d-flex list-unstyled align-items-center justify-content-center flex-wrap pb-4">
+                <li class="mx-3"><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="mx-2"><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li class="mx-2"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                <li class="mx-2"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li class="mx-2"><a href="#" target="_blank"><i class="fab fa-google-plus-g"></i></a></li>       
+            </ul>
+            <p class="text-center">© 2018 TMT Theme powered by Haravan</p>
+       </div>
+    </div>
+
+    <!--nav_top-->
+    <div class="w-100 row mx-0 position-fixed d-flex justify-content-xl-center align-items-center" id="nav_fixtop_pc">   
+    </div>
+    <div class="w-100 row mx-0 position-fixed" id="nav_fixtop_mb">   
+    </div> 
+    <!--search-->
+    <div id="search_" class="position-fixed">
+        <div class="search_main">
+            <p class="text-right mb-4"><i class="fas fa-times"></i></p>
+            <p class="d-flex align-items-center mb-4">
+                <input type="text" class="search_input mr-auto border-0" placeholder="Tìm kiếm...">
+                <a href="#"><i class="fas fa-search search_icon"></i></a>
+                <hr>
+            </p>
+        </div>
+    </div>
+    <!--body_mask-->
+    <div class="body_mask position-fixed w-100 h-100">
+    </div>
+    <!--navbar mobile-->    
+    <div id="navbar_left" class="w-75 bg-white position-fixed">
+        
+    </div>
+    <div>
+        <div id="navbar_right" class="w-25 position-fixed d-flex bg-white align-items-center px-3">
+            <i class="fas fa-long-arrow-alt-left"></i>
+        </div>
+    </div>
+    <!--body_mask1-->
+    <div class="body_mask1 position-fixed w-100 h-100">
+    </div>
+    <!--quick_info-->
+    <div class="quick_info bg-white position-fixed">
+        <div class="quick_info_top p-2">
+            <h3 class="text-center mb-0 text-white">THÔNG TIN SẢN PHẨM</h3>
+            <div class="close_quick_info"></div> 
+        </div>  
+        <div class="quick_info_main d-flex">
+            <div class="quick_info_main_left px-5 pb-3">
+                <img src="" alt="" class="d-block mx-auto src_pr_pr">
+                <div class="d-flex img_detail position-relative px-3">
+                    <div class="w-25 mr-1 border img_border_color">
+                        <img src="" alt="" class="w-100 img_dt1_pr">
+                    </div>
+                    <div class="w-25 ml-1 border">
+                        <img src="" alt="" class="w-100 img_dt2_pr">
+                    </div>
+                    <div class="w-25 ml-1 border">
+                        <img src="" alt="" class="w-100 img_dt3_pr">
+                    </div>
+                    <div class="w-25 ml-1 border">
+                        <img src="" alt="" class="w-100 img_dt4_pr">
+                    </div>
+                    <i class="fas fa-chevron-left"></i>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="quick_info_main_right pr-5 py-3">
+                <h4 class="font-weigth-bold name_pr"></h4>
+                <h5 class="price_number_pr"></h5>
+                <p class="content_pr"></p>
+                <p class="font-weigth-bold supplier_pr"></p>
+                <p class="font-weigth-bold code_pr"></p>
+                <p class="font-weigth-bold">Số lượng</p>
+                <input type="number" min="1" class="mb-3 py-1 text-center border quick_info_value" value="1">
+                <p class="d-flex align-items-center"><button class="px-4 py-2 mr-2">Thêm vào giỏ</button> hoặc <a href="view.html" class="mx-2 text-nowrap">Xem chi tiết</a></p>
+            </div>
+        </div>  
+    </div>
+    <!--get_pr-->
+    <div class="get_pr position-absolute">
+        <img src="" alt="">
+    </div>
+    <!--loading-->
+    <div class="loading justify-content-center align-items-center position-fixed">
+        <div class="w-100 loading_main">
+            <div class="position-relative rounded-circle spinx1 mx-auto">
+                <div class="position-absolute bg-success rounded-circle spinx1_main">
+                </div>
+            </div>
+            <div style="top:-100px" class="position-relative rounded-circle spinx2 mx-auto">
+                <div class="position-absolute bg-success rounded-circle spinx2_main">
+                </div>
+            </div>
+            <div style="top:-200px" class="position-relative rounded-circle spinx3 mx-auto">
+                <div class="position-absolute bg-success rounded-circle spinx3_main">
+                </div>
+            </div>
+            <div style="top:-300px" class="position-relative rounded-circle spinx4 mx-auto">
+                <div class="position-absolute bg-success rounded-circle spinx4_main">
+                </div>
+            </div>
+            <div style="top:-400px " class="position-relative rounded-circle spinx5 mx-auto">
+                <div class="position-absolute bg-success rounded-circle spinx5_main">
+                </div>
+            </div>
+            <div style="top:-500px" class="position-relative rounded-circle spinx6 mx-auto">
+                <div class="position-absolute bg-success rounded-circle spinx6_main">
+                </div>
+            </div>
+        </div> 
+    </div>   
+
+    <script src="home.js"></script>
+    <script> 
+        $(document).ready(function(){
+            $(".view_list").click(function(){
+                $(this).addClass("view_list_active");
+                $(this).siblings().removeClass("view_list_active");
+                $(this).parent().siblings().children().children("img").attr("src",$(this).children("img").attr("src"));
+                $("#zoom_out").children("img").attr("src",$(this).children("img").attr("src"));
+            });
+        });
+
+        var xx=0;
+        var yy=0;
+        setInterval(function div_move_interval(){
+                xx = $("#div_move").outerWidth()/2
+                yy= document.body.offsetWidth;
+        },0);
+
+        $(document).ready(function(){
+            $("#div_zoom_in").mouseover(function(){
+                $("#zoom_out").css("visibility","visible");
+                $("#div_move").css("visibility","visible");
+                $("#img_zoom").css("transform","scale(2)");
+                $(".wrap_zoom").css("z-index","0");
+            });
+        });
+        $(document).ready(function(){
+            $("#div_zoom_in").mousemove(function(event){
+                $("#demo").html(body_scroll);
+                if (event.clientX - getOffset(this).left <= xx) {
+                    $("#div_move").css("left","0px");
+                    $("#img_zoom").css("left",xx*2+"px");
+                } else if (event.clientX - getOffset(this).left >= xx*3){
+                    $("#div_move").css("left",xx*2+"px");
+                    $("#img_zoom").css("left",-xx*2+"px");
+                } else {
+                    $("#div_move").css("left",(event.clientX - getOffset(this).left - xx) + "px");
+                    $("#img_zoom").css("left",xx*2-(event.clientX - getOffset(this).left-xx)*2 + "px");
+                }
+                if (event.clientY+body_scroll - getOffset(this).top <= xx) {
+                    $("#div_move").css("top","0px");
+                    $("#img_zoom").css("top",xx*2+"px");
+                } else if (event.clientY+body_scroll - getOffset(this).top >= xx*3){
+                    $("#div_move").css("top",xx*2+"px");
+                    $("#img_zoom").css("top",-xx*2+"px");
+                } else {
+                    $("#div_move").css("top",(event.clientY - getOffset(this).top - xx +body_scroll) + "px");
+                    $("#img_zoom").css("top",xx*2-(event.clientY+body_scroll - getOffset(this).top-xx)*2 + "px");
+                }
+            });
+        });
+        
+        $(document).ready(function(){
+            $("#div_zoom_in").mouseout(function(){
+                    $("#zoom_out").css("visibility","hidden");
+                    $("#div_move").css("visibility","hidden");
+                    $(".wrap_zoom").css("z-index","-1");
+            });
+        });
+        
+        $(document).ready(function(){
+            $("#form-pro .inp1").click(function() {
+                var y=$(this).siblings(".inp3").val();
+                if (y>1) {
+                    $(this).siblings(".inp3").val(y-1);
+                } 
+            });
+            $("#form-pro .inp2").click(function() {
+                var y=$(this).siblings(".inp3").val();
+                $(this).siblings(".inp3").val(Number(y)+1);
+            });
+            $("#form-pro .inp3").keyup(function() {
+                var y=$(this).val();
+                if ((y<0 || y%y!=0)&&y!=0&&y!="") {
+                    $(this).val(1);
+                } 
+            });
+            $("#form-pro .inp3").focusout(function() {
+                var y=$(this).val();
+                if (y=="") {
+                    $(this).val(1);
+                }
+            });
+        });
+            
+        $(document).ready(function(){
+            $("#form-pro button").click(function(){
+                if ($(".inp3").val()>=1) {
+                    cart_number += Number($(".inp3").val());
+                    var src_cart = $(".wrap_zoom").find("img").attr("src");
+                    $(".count_sp").html(cart_number);
+                    cart_click_top = getOffset(this).top;
+                    cart_click_left = getOffset(this).left;
+                    $(".get_pr > img").attr("src",$(".wrap_zoom").find("img").attr("src"));
+                    $(".get_pr").css({"top":cart_click_top-75+"px","left":cart_click_left-75+"px","display":"block"})
+                    if (screen_offset >992-getScrollbarWidth()) {
+                        if (body_scroll>197) {
+                            setTimeout (function () {
+                                $(".get_pr").css({"top":body_scroll-30+"px","left":cart_hover_left-65+"px","transform":"scale(0.4)","transition":"0.2s"});
+                                setTimeout (function () {
+                                    $(".get_pr").css("transform","scale(0)");
+                                    setTimeout (function () {
+                                        $(".get_pr").css({"top":"auto","left":"auto","transform":"scale(1)","transition":"0s","display":"none"});
+                                    },301);
+                                },300);
+                            },100);
+                        } else {
+                            setTimeout (function () {
+                                $(".get_pr").css({"top":15+"px","left":cart_hover_left-65+"px","transform":"scale(0.4)","transition":"0.2s"});
+                                setTimeout (function () {
+                                    $(".get_pr").css("transform","scale(0)");
+                                    setTimeout (function () {
+                                        $(".get_pr").css({"top":"auto","left":"auto","transform":"scale(1)","transition":"0s","display":"none"});
+                                    },301);
+                                },300);
+                            },100);
+                        }
+                    } else {
+                        if (body_scroll>106) {
+                            setTimeout (function () {
+                                $(".get_pr").css({"top":body_scroll-35+"px","left":cart_hover_left-65+"px","transform":"scale(0.4)","transition":"0.2s"});
+                                setTimeout (function () {
+                                    $(".get_pr").css("transform","scale(0)");
+                                    setTimeout (function () {
+                                        $(".get_pr").css({"top":"auto","left":"auto","transform":"scale(1)","transition":"0s","display":"none"});
+                                    },301);
+                                },300);
+                            },100);
+                        } else {
+                            setTimeout (function () {
+                                $(".get_pr").css({"top":"-25px","left":cart_hover_left-65+"px","transform":"scale(0.4)","transition":"0.2s"});
+                                setTimeout (function () {
+                                    $(".get_pr").css("transform","scale(0)");
+                                    setTimeout (function () {
+                                        $(".get_pr").css({"top":"auto","left":"auto","transform":"scale(1)","transition":"0s","display":"none"});
+                                    },301);
+                                },300);
+                            },100);
+                        }
+                    }
+                    var cart_info_length = cart_info_src.length;
+                    var n=0;
+                    for (i=0;i<=cart_info_length-1;i++ ) {
+                        if (src_cart == cart_info_src[i]) {
+                            cart_info_quantity[i] += Number($(".inp3").val());
+                            
+                        } else {
+                            n += 1;
+                        }
+                        if (n == cart_info_length){
+                            x +=1;
+                            for (j=1;j<=info_pr_length;j++) {
+                                if (src_cart == info_product[j].src_pr){
+                                    cart_info_src[x]= info_product[j].src_pr;
+                                    cart_info_quantity[x]=Number($(".inp3").val());
+                                    cart_info_name[x]=info_product[j].name;
+                                    cart_info_price[x]=info_product[j].price_number;
+                                }
+                            } 
+                        }
+                    }
+               } else {
+                $(".inp3").val(1);
+               }
+            });
+        });
+        $(document).ready(function(){
+            $(".comment").click(function(){
+                $(".content-style-2").show();
+                $(".content-style-1").hide();
+                $(".tab-style-2 span").css("opacity","1");
+                $(".tab-style-2 h2").css("color","black");
+                $(".tab-style-1 span").css("opacity","0");
+                $(".tab-style-1 h2").css("color","grey");
+            });
+            $(".description").click(function(){
+                $(".content-style-2").hide();
+                $(".content-style-1").show();
+                $(".tab-style-2 span").css("opacity","0");
+                $(".tab-style-2 h2").css("color","grey");
+                $(".tab-style-1 span").css("opacity","1");
+                $(".tab-style-1 h2").css("color","black");
+            });
+        });
+        
+        
+
+       
+    </script>
+</body>
+</html>                                                                                                                 

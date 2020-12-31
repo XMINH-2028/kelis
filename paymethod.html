@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<link rel="stylesheet" href="pay.css">
+<link rel="stylesheet" href="paymethod.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<title>Paymethod</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="pay row">
+            <div class="col-lg-7 border-right pt-5">
+                <div class="caption_show">
+                    <h3 class="mb-3"><a href="#">Vegetables-TMT</a></h3>
+                    <ul class="list-unstyled d-flex">
+                        <li class="mr-2"><a href="cart_info.html">Giỏ hàng</a><span><i class="fas fa-chevron-right ml-2"></i></span></li>
+                        <li class="mr-2"><a href="pay.html">Thông tin giao hàng</a><span><i class="fas fa-chevron-right ml-2"></i></span></li>
+                        <li class="mr-2">Phương thức thanh toán</li>
+                    </ul>
+                </div>
+                <form action="payok.html" >
+                    <h5 class="mb-3">Phương thức vận chuyển</h5>
+                    <div class="form-check border rounded pr-3">
+                        <input id="delivery" class="form-check-input" type="radio" name="" value="" checked>
+                        <label for="delivery" class="form-check-label d-flex align-items-center">Giao hàng tận nơi <span class="ml-auto d-flex align-items-center">40,000<ins>đ</ins></span></label>
+                    </div>
+                    <h5 class="my-3">Phương thức thanh toán</h5>
+                    <div class="form-check border">
+                        <input id="cod" class="form-check-input" type="radio" name="how_pay" value="" >
+                        <label for="cod" class="form-check-label d-flex align-items-center">Thanh toán khi giao hàng (COD)</label>
+                    </div>
+                    <div class="form-check border mb-4">
+                        <input id="bank" class="form-check-input" type="radio" name="how_pay" value="" checked >
+                        <label for="bank" class="form-check-label d-flex align-items-center">Chuyển khoản qua ngân hàng</label>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center mt-2 wrapper_">
+                        <a href="pay.html" class="position-relative pl-3 mr-auto"><i class="fas fa-chevron-left mr-2 position-absolute"></i> Quay lại thông tin giao hàng</a>
+                        <button class="px-sm-4 py-sm-3 py-3 px-1 btn btn-primary text-nowrap position-relative" type="submit"><span>Hoàn tất đơn hàng</span>
+                            <div class="wrapper_loading position-absolute"><div class="btn_loading"></div></div>
+                        </button>
+                    </div>
+                </form>
+                <hr>
+            </div>
+            <div class="col-lg-5 pt-4">
+                <h3 class="py-3 title_hide bg-white my-1"><a href="#">Vegetables-TMT</a></h3>
+                <hr class="m-0 hr_hide">
+                <div class="caption_hide">
+                    <p class="d-flex align-items-center mb-0"><a href="#"><i class="fas fa-cart-arrow-down mr-2">
+                    </i></a><a href="#">Ẩn thông tin đơn hàng<i class="fas fa-chevron-up ml-2">
+                    </i></a><a href="#">Hiện thông tin đơn hàng<i class="fas fa-chevron-down ml-2"></i></a><span class="ml-auto d-flex align-items-center">110,000<ins>đ</ins></span></p>
+                </div>
+                <hr class="m-0 hr_hide">
+                <div class="div_show">
+                    <div class="justify-content-center align-items-center pt-4 div_hide_flex">
+                        <div class="mr-auto position-relative">
+                            <img src="images/otchuongvang.png" alt="" class="img-thumbnail">
+                            <span class="position-absolute rounded-circle border">1</span>
+                        </div>
+                        <p class="d-flex justify-content-center align-items-center">70,000<ins>đ</ins></p>
+                    </div>
+                    <hr class="mb-0 mt-4 div_hide">
+                    <div class="wrapper_1 py-4">
+                        <div class="wrapper_inp position-relative float-left pr-2">
+                            <label for="code" class="position-absolute mb-0">Mã giảm giá</label>
+                            <input type="text" name="" id="code" class="form-control mr-1" placeholder="Mã giảm giá">
+                            <span class="code_alert float-left pl-1"></span>
+                        </div>
+                        <button class="btn btn-primary disabled text-nowrap position-relative px-2 float-right"><span>Sử dụng</span>
+                            <div class="wrapper_loading position-absolute"><div class="btn_loading"></div></div>
+                        </button>
+                        <div style="clear:both"></div>
+                    </div>
+                    <div class="div_hide">
+                        <hr class="mt-0 mb-4">
+                        <p class="d-flex justify-content-center align-items-center"><span class="mr-auto">Tạm tính</span>70,000<ins>đ</ins></p>
+                        <p class="d-flex justify-content-center align-items-center"><span class="mr-auto">Phí vận chuyển</span>40,000<ins>đ</ins></p>
+                        <hr class="my-4">
+                        <h4 class="d-flex justify-content-center align-items-center mb-0 pb-4">Tổng cộng <span class="ml-auto mr-2">VND</span>110,000<ins>đ</ins></h4>
+                    </div>
+                </div>
+                <hr class="m-0">
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $(".wrapper_inp > input").keydown(function(){
+                $(this).css({"padding-top":"28px","padding-bottom":"14px"});
+                $(this).siblings("label").css({"opacity":"1","top":"0px","transform":"translateY(10%)"});
+                if ($(this).val()=="") {
+                    $(this).attr("placeholder","");
+                }
+            });
+            $(".wrapper_inp > input").eq(0).keydown(function(){
+                if ($(this).val()!="") {
+                    $(this).parents(".wrapper_1").find("button").removeClass("disabled");
+                }
+            });
+        });
+        $(document).ready(function() {
+            $(".wrapper_inp > input").focusout(function(){
+                if ($(this).val()=="") {
+                    $(this).attr("placeholder","Họ và tên");
+                    $(this).css({"padding-top":"19px","padding-bottom":"23px"});
+                    $(this).siblings("label").css({"opacity":"0","top":"50%","transform":"translateY(-50%)"});
+                }
+            });
+        });
+        $(document).ready(function() {
+            $(".wrapper_inp > input").eq(0).focusout(function(){
+                if ($(this).val()=="" || $(this).val()==" ") {
+                    $(this).attr("placeholder","Mã giảm giá");
+                    $(this).parents(".wrapper_1").find("button").addClass("disabled");
+                    $(".code_alert").html("");
+                    $(".wrapper_1 input").removeClass("box_warning");
+                }
+            });
+        });
+        
+       
+        var count_div_hide=1;
+        $(document).ready(function(){
+            $(".caption_hide").find("a").eq(2).click(function(){
+                $(this).hide();
+                $(".div_hide").show();
+                $(".div_hide_flex").css("display","flex");
+                $(".caption_hide").find("a").eq(1).show();
+                count_div_hide = 1;
+            });
+        });
+        $(document).ready(function(){
+            $(".caption_hide").find("a").eq(1).click(function(){
+                $(this).hide();
+                $(".div_hide").hide();
+                $(".div_hide_flex").css("display","none");
+                $(".caption_hide").find("a").eq(2).show();
+                count_div_hide = 0;
+            });
+        });
+
+        setInterval(function(){
+            if (document.body.offsetWidth < 992) {
+               if (count_div_hide == 0) {
+                    $(".div_hide").hide();
+                    $(".div_hide_flex").css("display","none");
+               }
+            } else {
+                if (count_div_hide == 0) {
+                    $(".div_hide").show();
+                    $(".div_hide_flex").css("display","flex");
+               }
+            }
+        },0);
+
+        $(document).ready(function(){
+            $(".wrapper_1 button").click(function(){
+                $(this).find(".btn_loading").addClass("anmt");
+                $(this).children("span").css("visibility", "hidden");
+                setTimeout(function (){
+                    $(".btn_loading").removeClass("anmt");
+                    $(".wrapper_1 button span").css("visibility", "visible");
+                    if ($(".wrapper_1 input").val()!="") {
+                        $(".code_alert").html("Không tìm thấy mã giảm giá");
+                        $(".wrapper_1 input").addClass("box_warning");
+                    }
+                },400);
+            });
+        });
+
+        $(document).ready(function(){
+            $(".wrapper_ button").click(function(){
+                $(this).find(".btn_loading").addClass("anmt");
+                $(this).children("span").css("visibility", "hidden");
+                setTimeout(function (){
+                    $(".btn_loading").removeClass("anmt");
+                    $(".wrapper_ span").css("visibility", "visible");
+                    validate();
+                },400);        
+                
+            });
+        });
+
+    </script>
+</body>
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                 

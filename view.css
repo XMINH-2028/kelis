@@ -1,0 +1,267 @@
+
+.view-content{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+.view-content h2{
+    font-weight: bold;
+    font-size: 25px;
+}
+.view_list {
+    width: 25%;
+    cursor: pointer;
+    border: 1px solid gainsboro;
+}
+.view_list_active {
+    border: 1px solid #49a010;
+}
+.view-list-product img{
+    width: 100%;
+    height: 100%;
+}
+.view-content span:nth-of-type(1){
+    color: #49a010;
+    font-size:30px;
+}
+.view-content span:nth-of-type(2) {
+    color: #49a010;
+    font-size: 15px;
+}
+.view-content .col-xl-7 p{
+    color: #666;
+    font-size: 14px;
+    font-family: Helvetica;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.wrap_zoom {
+    position: absolute;
+    top:0px;
+    left:0px;
+}
+#div_zoom_in {
+    width: 450px;
+    height:450px; 
+    cursor: move;
+}
+#div_move {
+    height: 225px; 
+    width: 225px; 
+    visibility: hidden;
+    background-color: rgba(255,255,255,0.3);
+    border:1px solid black;
+}
+#zoom_out {
+    width: 450px;
+    height:450px; 
+    visibility: hidden;
+    overflow: hidden;
+    border:1px solid black;
+}
+.wrap_zoom {
+    z-index: -1;
+}
+.under_zoom div:nth-of-type(1) {
+    width: 50px;
+    border: 1px solid #49a010;
+}
+.tab-style-1{
+    padding: 20px;
+    cursor: pointer;
+    transition:0.5s;
+}
+.tab-style_:hover {
+    color:black;
+}
+.tab-style_:hover span {
+    color:black;
+    opacity: 1;
+}
+.tab-style-2{
+    padding: 20px;
+    cursor: pointer;
+    color:grey;
+    transition:0.5s;
+}
+.tab-style-1 span {
+    padding:3px 60px 0px 60px;
+    background-color:#49a010;
+    position: absolute;
+    top:60px;
+    right: 68px;
+    transition:0.5s;
+}
+.tab-style-2 span {
+    padding:3px 60px 0px 60px;
+    background-color:#49a010;
+    position: absolute;
+    top:60px;
+    left: 27px;
+    opacity: 0;
+    transition:0.5s;
+}
+.tab-style hr {
+    top:45px;
+    left: 0px;
+}
+.content-style-2 {
+    display:none;
+    height: 200px;
+}
+.view-content-item{
+    padding-top: 15px;
+}
+.view-content-item a{
+    color: silver;
+}
+.view-content-item a:hover{
+    color: #49a010;
+}
+
+.content-style-1{
+    font-size: 14px;
+    color: #666;
+    font-family: Helvetica;
+}
+#form-pro input{
+    height:46px;
+    width: 46px;
+}
+#form-pro input:focus {
+    outline: none;
+}
+#form-pro button:focus {
+    outline: none;
+}
+#form-pro button{
+    padding: 12px 25px;
+    border-radius: 30px;
+    background-color: #49a010;
+    border: none;
+    color: white;
+}
+
+.view-content {
+    max-width: 1250px;
+    margin: auto;
+}
+
+@media only screen and (max-width:1200px) {
+    
+    #div_zoom_in {
+        width: 370px;
+        height:370px;
+        min-width: 370px;
+        min-height: 370px;
+    }
+    
+    #div_move {
+        height: 185px; 
+        width: 185px; 
+    }
+    #zoom_out {
+        width: 370px;
+        height:370px; 
+    }
+}
+@media only screen and (max-width:992px){
+
+    #div_zoom_in {
+        width: 300px;
+        height:300px;
+        min-width: 300px;
+        min-height: 300px;
+    }
+    
+    #div_move {
+        height: 150px; 
+        width: 150px; 
+    }
+    #zoom_out {
+        width: 300px;
+        height:300px; 
+    }
+
+}
+
+@media only screen and (max-width:767px){
+    .list-nav{
+        display: none !important;
+    }
+    #blog-none{
+        display: none !important;
+    }
+    #content-left{
+        display: none !important;
+    }
+    .content-item-blog{
+        justify-content: space-between;
+    }
+    .content{
+        width: 100%;
+    }
+    #blog-num-main{
+        width: 100%;
+    }
+    .blog-num1{
+        padding-left: 0 !important;
+        width: 100%;
+    }
+    .blog-none-right{
+        display: block;
+        margin-top: 20px;
+        border-top: 1px solid gainsboro;
+    }
+    .md-form, .md-form-in{
+        width: 80%;
+    }
+    #div_zoom_in {
+        min-width: 576px;
+        min-height:576px;  
+    }
+    
+    #div_move {
+        display: none;
+    }
+    #zoom_out {
+       display: none;
+    }
+}
+@media only screen and (max-width:576px){
+    .list-nav{
+        display: none;
+    }
+    .content{
+        padding:0px!important;
+    }
+    .product-item {
+        padding:0px 5px!important;
+    }
+    .blog-num1{
+        width: 100%;
+    }
+    .blog-none-right{
+        width: 100%;
+    }
+    .blog-none-right img{
+        width: 100%;
+    }
+    #div_zoom_in {
+        min-width: 320px;
+        min-height:320px; 
+    }
+    #form-pro {
+        flex-wrap: wrap;
+    }
+    .tab-style h2 {
+        font-size:15px;
+    }
+    .tab-style span {
+        display:none;
+    }
+    .tab-style hr {
+       top:30px;
+    }
+}
+

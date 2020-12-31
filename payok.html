@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<link rel="stylesheet" href="pay.css">
+<link rel="stylesheet" href="payok.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<title>Payok</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="pay row">
+            <div class="col-lg-7 border-right pt-5">
+                <div class="caption_show">
+                    <h3 class="mb-3"><a href="#">Vegetables-TMT</a></h3>
+                </div>
+                <div class="position-relative">
+                    <h4 class="mb-0">Đặt hàng thành công</h4>
+                    <p class="mb-0">Mã đơn hàng #100010</p>
+                    <p class="mb-3">Cảm ơn bạn đã mua hàng</p>
+                    <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#338dbc" stroke-width="2" 
+                    class="hanging-icon checkmark position-absolute"><path class="checkmark_circle" d="M25 49c13.255 0 24-10.745 24-24S38.255 1 25 1 1
+                     11.745 1 25s10.745 24 24 24z"></path>
+                    <path class="checkmark_check" d="M15 24.51l7.307 7.308L35.125 19"></path></svg>
+                </div>
+                <div class="border rounded p-2 mb-4">
+                    <h5>Thông tin đơn hàng</h5>
+                    <p class="mb-1">Thông tin giao hàng</p>
+                    <p class="mb-1">Nguyễn Ích Minh</p>
+                    <p class="mb-1">abc@gmail.com</p>
+                    <p class="mb-1">Hà Nội</p>
+                    <p class="mb-1">Việt Nam</p>
+                    <p>0975146213</p>
+                    <p class="mb-1">Phương thức thanh toán</p>
+                    <p>Thanh toán khi giao hàng (COD)</p>
+                </div>
+                <form action="home.html">
+                    <div class="d-flex justify-content-center align-items-center mt-2 wrapper_">
+                        <div class="mr-auto d-flex justify-content-center align-items-center flex-nowrap">
+                            <p class="mb-0"><span class="rounded-circle border mr-1">?</span> Cần hỗ trợ?<a href="#" class="ml-2"> Liên hệ chúng tôi</a></p>  
+                        </div>
+                        <button class="px-sm-4 py-sm-3 py-3 px-1 btn btn-primary mb-3 mb-lg-0" type="submit"><span>Hoàn tất đơn hàng</span>
+                        </button>
+                    </div>
+                </form>
+                <hr>
+            </div>
+            <div class="col-lg-5 pt-4">
+                <h3 class="py-3 title_hide bg-white my-1"><a href="#">Vegetables-TMT</a></h3>
+                <hr class="m-0 hr_hide">
+                <div class="caption_hide">
+                    <p class="d-flex align-items-center mb-0"><a href="#"><i class="fas fa-cart-arrow-down mr-2">
+                    </i></a><a href="#">Ẩn thông tin đơn hàng<i class="fas fa-chevron-up ml-2">
+                    </i></a><a href="#">Hiện thông tin đơn hàng<i class="fas fa-chevron-down ml-2"></i></a><span class="ml-auto d-flex align-items-center">70,000<ins>đ</ins></span></p>
+                </div>
+                <hr class="m-0 hr_hide">
+                <div class="div_show">
+                    <div class="justify-content-center align-items-center py-4 div_hide_flex">
+                        <div class="mr-auto position-relative">
+                            <img src="images/otchuongvang.png" alt="" class="img-thumbnail">
+                            <span class="position-absolute rounded-circle border">1</span>
+                        </div>
+                        <p class="d-flex justify-content-center align-items-center">70,000<ins>đ</ins></p>
+                    </div>
+                    <div class="div_hide">
+                        <hr class="mt-0 mb-4">
+                        <p class="d-flex justify-content-center align-items-center"><span class="mr-auto">Tạm tính</span>70,000<ins>đ</ins></p>
+                        <p class="d-flex justify-content-center align-items-center"><span class="mr-auto">Phí vận chuyển</span>40,000<ins>đ</ins></p>
+                        <hr class="my-4">
+                        <h4 class="d-flex justify-content-center align-items-center mb-0 pb-4">Tổng cộng <span class="ml-auto mr-2">VND</span>110,000<ins>đ</ins></h4>
+                    </div>
+                </div>
+                <hr class="m-0 hr_end">
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $(".wrapper_inp > input").keydown(function(){
+                $(this).css({"padding-top":"28px","padding-bottom":"14px"});
+                $(this).siblings("label").css({"opacity":"1","top":"0px","transform":"translateY(10%)"});
+                if ($(this).val()=="") {
+                    $(this).attr("placeholder","");
+                }
+            });
+            $(".wrapper_inp > input").eq(0).keydown(function(){
+                if ($(this).val()!="") {
+                    $(this).parents(".wrapper_1").find("button").removeClass("disabled");
+                }
+            });
+        });
+        $(document).ready(function() {
+            $(".wrapper_inp > input").focusout(function(){
+                if ($(this).val()=="") {
+                    $(this).attr("placeholder","Họ và tên");
+                    $(this).css({"padding-top":"19px","padding-bottom":"23px"});
+                    $(this).siblings("label").css({"opacity":"0","top":"50%","transform":"translateY(-50%)"});
+                }
+            });
+        });
+        $(document).ready(function() {
+            $(".wrapper_inp > input").eq(0).focusout(function(){
+                if ($(this).val()=="" || $(this).val()==" ") {
+                    $(this).attr("placeholder","Mã giảm giá");
+                    $(this).parents(".wrapper_1").find("button").addClass("disabled");
+                    $(".code_alert").html("");
+                    $(".wrapper_1 input").removeClass("box_warning");
+                }
+            });
+        });
+        
+       
+        var count_div_hide=1;
+        $(document).ready(function(){
+            $(".caption_hide").find("a").eq(2).click(function(){
+                $(this).hide();
+                $(".div_hide").show();
+                $(".div_hide_flex").css("display","flex");
+                $(".caption_hide").find("a").eq(1).show();
+                $(".hr_end").show();
+                count_div_hide = 1;
+            });
+        });
+        $(document).ready(function(){
+            $(".caption_hide").find("a").eq(1).click(function(){
+                $(this).hide();
+                $(".div_hide").hide();
+                $(".div_hide_flex").css("display","none");
+                $(".caption_hide").find("a").eq(2).show();
+                $(".hr_end").hide();
+                count_div_hide = 0;
+            });
+        });
+
+        setInterval(function(){
+            if (document.body.offsetWidth < 992) {
+               if (count_div_hide == 0) {
+                    $(".div_hide").hide();
+                    $(".div_hide_flex").css("display","none");
+               }
+            } else {
+                if (count_div_hide == 0) {
+                    $(".div_hide").show();
+                    $(".div_hide_flex").css("display","flex");
+               }
+            }
+        },0);
+
+        $(document).ready(function(){
+            $(".wrapper_1 button").click(function(){
+                $(this).find(".btn_loading").addClass("anmt");
+                $(this).children("span").css("visibility", "hidden");
+                setTimeout(function (){
+                    $(".btn_loading").removeClass("anmt");
+                    $(".wrapper_1 button span").css("visibility", "visible");
+                    if ($(".wrapper_1 input").val()!="") {
+                        $(".code_alert").html("Không tìm thấy mã giảm giá");
+                        $(".wrapper_1 input").addClass("box_warning");
+                    }
+                },400);
+            });
+        });
+
+        $(document).ready(function(){
+            $(".wrapper_ button").click(function(){
+                $(this).find(".btn_loading").addClass("anmt");
+                $(this).children("span").css("visibility", "hidden");
+                setTimeout(function (){
+                    $(".btn_loading").removeClass("anmt");
+                    $(".wrapper_ span").css("visibility", "visible");
+                    validate();
+                },400);        
+                
+            });
+        });
+
+    </script>
+</body>
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                 

@@ -1,0 +1,329 @@
+.pay {
+    color:#333333;
+    height:100vh;
+}
+.pay h3 a {
+    color:black;
+}
+.pay a {
+    text-decoration: none!important;
+}
+.pay > div:nth-of-type(1) {
+    padding:0 5% 0 10%;
+}
+.pay > div:nth-of-type(2) {
+    padding:0 10% 0 5%;
+}
+.pay ul {
+    font-size:13px;
+}
+.pay ul li:last-child{
+    color: #999999;
+}
+.pay ul li:nth-child(2){
+    color: #333333;
+}
+.pay span {
+    color: #999999;
+    font-size:12px;
+}
+.pay .wrapper_inp:nth-child(2) {
+    width: 70%;
+}
+.pay .wrapper_inp:nth-child(3) {
+    width: 30%;
+}
+.pay .wrapper_inp label {
+    top:50%; 
+    transform: translateY(-50%);
+    padding-left:12px;  
+    opacity:0;
+    font-size:13px;
+    color: #999999;
+    transition:0.2s;
+}
+.pay .wrapper_inp input {
+    padding: 19px 12px 23px 12px;
+    transition:0.2s;
+    font-size: 15px;
+}
+.pay .wrapper_inp input:focus {
+    box-shadow: 0 0 1px 1.5px #338dbc;
+}
+.pay .wrapper_inp span {
+    color: red;
+    font-size: 14px;
+    line-height: 15px;
+}
+.pay .wrapper_select span {
+    color: red;
+    font-size: 14px;
+    line-height: 15px;
+}
+.pay .wrapper_select select {
+   height: 44px;
+   padding-bottom: 3px;
+   padding-left: 8px;
+   transition:0.2s;
+   color: #333333;
+}
+.pay .wrapper_select select:focus {
+    box-shadow: 0 0 1px 1.5px #338dbc;
+    outline:none;
+}
+.pay .wrapper_select label {
+    top:50%; 
+    transform: translateY(-50%);
+    padding-left:12px;  
+    opacity:0;
+    font-size:13px;
+    color: #999999;
+    transition:0.2s;
+    z-index: -1;
+}
+.pay form div:last-child i {
+    font-size:13px;
+    top:50%;
+    transform: translateY(-40%);
+    left:0px;
+}
+.pay form div:last-child a {
+    font-size:14px;
+}
+.pay form div:last-child i {
+    transition: 0.5s;
+}
+.pay form div:last-child a:hover i {
+    left:-5px;
+}
+.pay form div:last-child button {
+    border:none;
+}
+.pay form div:last-child button span {
+    color:white;
+    font-size:15px;
+}
+.pay form div:last-child button:focus {
+    box-shadow: none!important;
+}
+.pay > div:nth-of-type(1) hr:last-child {
+    margin-top:120px;
+}
+.pay > div:nth-of-type(2) {
+    background-color:#fafafa;
+}
+.pay > div:nth-of-type(2) .div_show div:nth-child(1) img {
+    width: 65px;
+    height:65px;
+}
+.pay > div:nth-of-type(2) .div_show div:nth-child(1) .rounded-circle {
+    padding:2px 7px;
+    top:0px;
+    right:0px;
+    transform:translate(50%,-50%);
+    background-color: silver;
+    color:white;
+}
+
+.pay > div:nth-of-type(2) button {
+    border:none;
+    width: 30%;
+    height: 44px;
+}
+.pay > div:nth-of-type(2) button span {
+   color:white;
+   font-size:15px;
+}
+.pay .wrapper_1 .wrapper_inp {
+    width: 70%
+}
+.pay > div:nth-of-type(2) button:focus {
+    box-shadow: none;
+}
+.disabled {
+    background-color:#a5a4a4!important;
+}
+.pay > div:nth-of-type(2) p span {
+    font-size:16px;
+}
+.pay > div:nth-of-type(2) p i {
+    font-size:10px;
+}
+.pay > div:nth-of-type(2) h5 {
+    color:#333333;
+}              
+.pay .fa-cart-arrow-down {
+    font-size:20px!important;
+}
+.pay .caption_hide {
+    display:none;
+}
+.div_hide_flex {
+    display: flex;
+}
+.pay .title_hide {
+    display:none;
+}
+.pay .caption_hide span {
+    font-size: 20px!important;
+    color:#333333;
+}
+.pay .hr_hide {
+    display:none;
+}
+.box_warning {
+    box-shadow: 0 0 1px 1.5px red !important;
+}
+.pay .wrapper_loading {
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.pay .btn_loading {
+    width: 20px;
+    height:20px;
+    border:2px solid;
+    border-color: grey white white white;
+    border-radius: 100%;
+    display:none;
+}
+.pay .btn_loading1 {
+    width: 40px;
+    height:40px;
+    border:4px solid;
+    border-color: blue silver silver silver;
+    border-radius: 100%;
+    display:none;
+}
+.anmt {
+    animation: spin_btn 0.4s linear;
+    display:block!important;
+}
+h4 span {
+    margin-top:3px;
+}
+h4 ins {
+    font-size:15px;
+    margin-bottom: 5px;
+}
+.caption_hide p ins {
+    font-size:12px;
+    margin-bottom: 3px;
+}
+p ins {
+    font-size:10px;
+    margin-bottom: 3px;
+}
+label ins {
+    font-size:10px;
+    margin-bottom: 3px;
+}
+
+
+@keyframes spin_btn {
+    0% { transform: rotate(0deg); }
+    100% {transform: rotate(270deg);}
+}
+
+@media screen and (max-width:991px) {
+    .pay > div:nth-of-type(1) hr:last-child {
+        margin-top:50px;
+    }
+    .pay > div:nth-of-type(2) {
+        order:1;
+        padding: 0px 0%!important;
+        background-color:white;
+    }
+    .pay > div:nth-of-type(2) .caption_hide {
+        padding: 20px 15%!important;
+        background-color:#fafafa;
+    }
+    .pay > div:nth-of-type(2) .div_show {
+        padding: 0px 15%!important;
+        background-color:#fafafa;
+    }
+    .pay > div:nth-of-type(1) {
+        order:2;
+        padding: 20px 15%!important;
+    }
+    .pay .div_hide {
+        display: none;
+    }
+    .pay .div_hide_flex {
+        display: none;
+    }
+    .pay .caption_hide {
+        display:block;
+    }
+    .pay .title_hide {
+        display:block;
+        padding: 16px 15%!important;
+    }
+    .pay .hr_hide {
+        display:block;
+    }
+    .pay .caption_show {
+        display:none;
+    }
+    .pay .caption_hide a:nth-child(2) {
+        display:none;
+    }
+}   
+@media screen and (max-width:768px) {
+    
+    .pay > div:nth-of-type(2) .caption_hide {
+        padding: 20px 10%!important;
+    }
+    .pay > div:nth-of-type(2) .div_show {
+        padding: 0px 10%!important;
+    }
+    .pay > div:nth-of-type(1) {
+        padding: 20px 10%!important;
+    }
+    .pay .title_hide {
+        display:block;
+        padding: 16px 10%!important;
+    }
+}
+@media screen and (max-width:576px) {
+    .pay > div:nth-of-type(2) .caption_hide {
+        padding: 20px 3%!important;
+    }
+    .pay > div:nth-of-type(2) .div_show {
+        padding: 0px 3%!important;
+    }
+    .pay > div:nth-of-type(1) {
+        padding: 20px 3%!important;
+    }
+    .pay .title_hide {
+        display:block;
+        padding: 16px 3%!important;
+    }
+    .pay .wrapper_inp:nth-child(2) {
+        width: 100%;
+    }
+    .pay .wrapper_inp:nth-child(3) {
+        width: 100%;
+    }
+    .pay form div:last-child {
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+    .pay form div:last-child button {
+        width: 100%;
+    }
+    .pay form div:last-child a {
+        left:50%;
+        transform:translateX(-50%);
+        margin-bottom: 20px;
+    }
+    .pay form .wrapper_select {
+        width: 100%!important;
+    }
+    .pay .caption_hide span {
+        font-size: 17px!important;
+    }
+    .pay .caption_hide a {
+        font-size: 14px!important;
+    }
+}                                   

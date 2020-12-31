@@ -587,6 +587,9 @@ body a:hover {
     text-decoration:none;
     width:100%;
 }
+.special_pr_main_item > abbr a {
+    width:100%;
+}
 .special_pr_main_item a span:hover {
     color:#49a010 !important;
     width: 100%;

@@ -319,9 +319,14 @@
     });
 
     var body_scroll = 0;
-        window.onscroll = function() {myFunction()};
+   
+        window.onscroll = function() {
+            myFunction();
+           
+        };
         function myFunction() {
             body_scroll = document.documentElement.scrollTop;
+            
             if (screen_offset > 992-getScrollbarWidth()) {
                 if (document.body.scrollTop > 197 || document.documentElement.scrollTop > 197) {
                     $("#nav_fixtop_pc").css({"top":"0px","background-color":"rgba(255,255,255,0.8)"});
@@ -601,7 +606,7 @@
         var cart_hover_ = 0;
         var deal_end_banner_width = 0;
         var deal_end_banner_count = 0;
-        setInterval(function() {
+        var reSize = function() {
             cart_hover_top = getOffset(cart_hover_).top;
             cart_hover_left = getOffset(cart_hover_).left;
             screen_offset = document.body.offsetWidth;
@@ -638,8 +643,16 @@
                 $("#navbar_nav").css("display","none");
                 $(".navbar_pc").css("height","16px");
             }
-        },0);
-
+            if (window.innerWidth>1360) {
+                $('#nav_fixtop_pc').css({"left":(window.innerWidth-1360-getScrollbarWidth())/2+"px"});
+            } else {
+                $('#nav_fixtop_pc').css({"left":"0px"});
+            }
+        };
+        reSize();
+        window.onresize = function(){
+            reSize();
+        }
         function addcomma(str){
             var text = "";
             if (String(str).length <=6 && String(str).length >=4) {

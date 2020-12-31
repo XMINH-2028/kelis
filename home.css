@@ -367,6 +367,7 @@ body a:hover {
     border:1px solid white;
 }
 #nav_fixtop_pc,#nav_fixtop_mb {
+    display: flex;
     background-color: white;
     opacity: 1;
     top:-90px;

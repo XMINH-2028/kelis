@@ -563,6 +563,15 @@ body a:hover {
     transition:0.5s;
     font-family: 'Volkhov', serif;
 }
+.grid-grid-grid-grid .special_pr_main_item{
+    display: flex;
+    align-items: center;
+}
+.grid-grid-grid-grid .specialprmainitem_select {
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+}
 .special_pr_main_item p {
     color:#49a010;
 }
@@ -576,9 +585,11 @@ body a:hover {
 }
 .special_pr_main_item > abbr {
     text-decoration:none;
+    width:100%;
 }
 .special_pr_main_item a span:hover {
     color:#49a010 !important;
+    width: 100%;
 }
 .special_pr_main_item a span {
     overflow: hidden;

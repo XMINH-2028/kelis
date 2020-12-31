@@ -567,9 +567,14 @@ body a:hover {
 .special_pr_main_item a span:hover {
     color:#49a010 !important;
 }
+.special_pr_main_item a {
+    width: 100%;
+    text-align: center;
+}
 .special_pr_main_item a span {
     overflow: hidden;
     text-overflow: ellipsis;
+    display: block;
 }
 .pr_sale_item a span {
     overflow: hidden;

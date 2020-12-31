@@ -587,18 +587,19 @@ body a:hover {
     text-decoration:none;
     width:100%;
 }
-.border-border-border .special_pr_main_item > abbr a {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+
 .special_pr_main_item a span:hover {
     color:#49a010 !important;
    
 }
+.special_pr_main_item a {
+    width: 100%;
+    text-align: center;
+}
 .special_pr_main_item a span {
     overflow: hidden;
     text-overflow: ellipsis;
+    display: block;
 }
 .border-border-border .special_pr_main_item:hover {
     border: 1px solid #49a010 !important;

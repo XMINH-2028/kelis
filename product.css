@@ -501,13 +501,9 @@ body a:hover {
 .icon:hover{
     color: #49a010;
 }
-.special_pr_main_item_left{
-    width: 30%;
-    float: left;
-}
+
 .grid-grid-grid-grid .special_pr_main_item{
     width: 30%;
-    float: left;
 }
 .grid-grid-grid-grid .special_pr_main_item img{
     width: 90%;
@@ -518,11 +514,11 @@ body a:hover {
 }
 .special_pr_main_item_right{
     width: 70%;
-    float: left;
     padding: 15px;
 }
-.special_pr_main_item_right h6{
+.special_pr_main_item_right h6,p{
     font-weight: bold;
+    text-align: center;
 }
 .special_pr_main_item_right span{
     color: black ;
@@ -873,7 +869,7 @@ strike{
     text-decoration: none;
 }
 .breadcrumb{
-    background-color: unset !important;
+    background-color: transparent;
     justify-content: center;
 }
 .empty_cart_main button {

@@ -970,7 +970,7 @@ body a:hover {
     text-decoration: none;
 }
 .breadcrumb{
-    background-color: unset !important;
+    background-color: transparent;
     justify-content: center;
 }
 .empty_cart_main button {

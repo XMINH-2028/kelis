@@ -287,7 +287,7 @@
                 for (i=1;i<=text_number.length-1;i++) {
                     text_html+='<div class="px-2 pt-4 pr_sale_item parent_img mb-3 mb-lg-0">'+
                         '<div class="special_pr_main_item border position-relative ">'+
-                            '<abbr title="'+info_product[text_number[i]].name+'"><a href="" class="d-flex flex-wrap justify-content-center"><img src="'+info_product[text_number[i]].src_pr+'" alt="" class="w-100"><br>'+
+                            '<abbr title="'+info_product[text_number[i]].name+'"><a href=""><img src="'+info_product[text_number[i]].src_pr+'" alt="" class="w-100"><br>'+
                                 '<span class="text-dark px-1">'+info_product[text_number[i]].name+'</span></a></abbr>'+
                             '<hr class="mx-auto hr_sample">'+
                             '<p class="text-center font-weight-bold">'+addcomma(info_product[text_number[i]].price_number)+'<span>đ</span></p>'+
@@ -1062,7 +1062,7 @@
                 if (info_product[i].price_number !=0) {
                     text+='<div class="px-3 py-0 my-3 pr_sale_item parent_img col-xl-4 col-lg-4 col-md-6 col-sm-6 col-sm-6 ">'+
                     '<div class="special_pr_main_item border position-relative">'+
-                        '<abbr title="'+info_product[i].name+'"><a href="" class="d-flex flex-wrap justify-content-center"><img src="'+info_product[i].src_pr+'" alt="" class="w-100"><br>'+
+                        '<abbr title="'+info_product[i].name+'"><a href=""><img src="'+info_product[i].src_pr+'" alt="" class="w-100"><br>'+
                             '<span class="text-dark px-1">'+info_product[i].name+'</span></a></abbr>'+
                         '<hr class="mx-auto hr_sample">'+
                         '<p class="text-center font-weight-bold">'+addcomma(info_product[i].price_number)+'<span>đ</span></p>'+
@@ -1086,7 +1086,7 @@
                 if (info_product[i].price_number !=0) {
                     text+='<div class="px-3 py-0 my-3 pr_sale_item parent_img col-12 d-flex">'+
                     '<div class="special_pr_main_item border-list position-relative w-30">'+
-                        '<abbr title="'+info_product[i].name+'"><a href="" class="d-flex flex-wrap justify-content-center"><img src="'+info_product[i].src_pr+'" alt="" class="w-100"><br></a></abbr>'+
+                        '<abbr title="'+info_product[i].name+'"><a href=""><img src="'+info_product[i].src_pr+'" alt="" class="w-100"><br></a></abbr>'+
                         '<div class="specialprmainitem_select position-absolute d-flex w-100 justify-content-center">'+
                             '<abbr title="Thêm vào giỏ" class="rounded mx-1 rank1 rank"><i class="fa fa-shopping-basket "></i></abbr>'+
                             '<abbr title="Xem chi tiết" class="rounded mx-1 rank2 rank"><a href="#"><i class="fas fa-exchange-alt"></i></a></abbr>'+
@@ -1130,7 +1130,7 @@
                     for (i=0;i<=random_array.length-1;i++) {
                         text+='<div class="px-3 py-0 my-3 pr_sale_item parent_img col-xl-4 col-lg-4 col-md-6 col-sm-6 col-sm-6 ">'+
                             '<div class="special_pr_main_item border position-relative">'+
-                                '<abbr title="'+info_product[random_array[i]].name+'"><a href="" class="d-flex flex-wrap justify-content-center"><img src="'+info_product[random_array[i]].src_pr+'" alt="" class="w-100"><br>'+
+                                '<abbr title="'+info_product[random_array[i]].name+'"><a href=""><img src="'+info_product[random_array[i]].src_pr+'" alt="" class="w-100"><br>'+
                                     '<span class="text-dark px-1">'+info_product[random_array[i]].name+'</span></a></abbr>'+
                                 '<hr class="mx-auto hr_sample">'+
                                 '<p class="text-center font-weight-bold">'+addcomma(info_product[random_array[i]].price_number)+'<span>đ</span></p>'+
@@ -1149,7 +1149,7 @@
                     for (i=0;i<=random_array.length-1;i++) {
                         text+='<div class="px-3 py-0 my-3 pr_sale_item parent_img col-12 d-flex">'+
                         '<div class="special_pr_main_item border-list position-relative w-30">'+
-                            '<abbr title="'+info_product[random_array[i]].name+'"><a href="" class="d-flex flex-wrap justify-content-center"><img src="'+info_product[random_array[i]].src_pr+'" alt="" class="w-100"><br></a></abbr>'+
+                            '<abbr title="'+info_product[random_array[i]].name+'"><a href=""><img src="'+info_product[random_array[i]].src_pr+'" alt="" class="w-100"><br></a></abbr>'+
                             '<div class="specialprmainitem_select position-absolute d-flex w-100 justify-content-center">'+
                                 '<abbr title="Thêm vào giỏ" class="rounded mx-1 rank1 rank"><i class="fa fa-shopping-basket "></i></abbr>'+
                                 '<abbr title="Xem chi tiết" class="rounded mx-1 rank2 rank"><a href="#"><i class="fas fa-exchange-alt"></i></a></abbr>'+
@@ -1225,7 +1225,7 @@
             var text="";
             text+='<div class="px-3 py-0 my-3 pr_sale_item parent_img col-xl-4 col-lg-4 col-md-6 col-sm-6 col-sm-6 ">'+
                 '<div class="special_pr_main_item border position-relative">'+
-                    '<abbr title="'+info_product[w].name+'"><a href="" class="d-flex flex-wrap justify-content-center"><img src="'+info_product[w].src_pr+'" alt="" class="w-100"><br>'+
+                    '<abbr title="'+info_product[w].name+'"><a href=""><img src="'+info_product[w].src_pr+'" alt="" class="w-100"><br>'+
                         '<span class="text-dark px-1">'+info_product[w].name+'</span></a></abbr>'+
                     '<hr class="mx-auto hr_sample">'+
                     '<p class="text-center font-weight-bold">'+addcomma(info_product[w].price_number)+'<span>đ</span></p>'+
@@ -1243,7 +1243,7 @@
             var text="";
             text+='<div class="px-3 py-0 my-3 pr_sale_item parent_img col-12 d-flex">'+
                         '<div class="special_pr_main_item border-list position-relative w-30">'+
-                            '<abbr title="'+info_product[w].name+'"><a href="" class="d-flex flex-wrap justify-content-center"><img src="'+info_product[w].src_pr+'" alt="" class="w-100"><br></a></abbr>'+
+                            '<abbr title="'+info_product[w].name+'"><a href=""><img src="'+info_product[w].src_pr+'" alt="" class="w-100"><br></a></abbr>'+
                             '<div class="specialprmainitem_select position-absolute d-flex w-100 justify-content-center">'+
                                 '<abbr title="Thêm vào giỏ" class="rounded mx-1 rank1 rank"><i class="fa fa-shopping-basket "></i></abbr>'+
                                 '<abbr title="Xem chi tiết" class="rounded mx-1 rank2 rank"><a href="#"><i class="fas fa-exchange-alt"></i></a></abbr>'+

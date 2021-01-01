@@ -28,6 +28,7 @@ body a:hover {
 }
 .container-fluid {
     display: none;
+    overflow-x: hidden;
 }
 .loading {
     width: 100%;
@@ -1462,7 +1463,7 @@ body a:hover {
 }  
 @media screen and (max-width:300px) {
    .container-fluid,#nav_fixtop_pc,#nav_fixtop_mb {
-    width: 280px !important;
+    min-width: 250px !important;
    }
    #topsite_main_ .col-3 {
     padding: 0px;
